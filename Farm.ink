@@ -94,8 +94,10 @@ VAR knows_james = false
     * {email_james} Chat with James
         James: hey {kat_name}!
         I: sorry for forgetting to join the game yesterday evening...
-        I: I was so tired that felt asleep on the sofa.
+        I: I was so tired that I felt asleep on the sofa.
         James: No worries
+        ** [How was the game?]
+        ** [About HyGen]
         ~ knows_james = true
 - {not knows_hygen:->computer} {not knows_james:->computer}
 You hear the engine of an unknow car approaching your house and you quickly turn off the computer and run upstairs.
