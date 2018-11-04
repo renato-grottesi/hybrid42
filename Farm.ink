@@ -96,8 +96,20 @@ VAR knows_james = false
         I: sorry for forgetting to join the game yesterday evening...
         I: I was so tired that I felt asleep on the sofa.
         James: No worries
+== james_chat
         ** [How was the game?]
+            I: was it boring to play without me? ;-p
+            James: 2 more didn't show and we ended up cancelling the game after 15 minutes...
+            I: sorry...
         ** [About HyGen]
+            I: do you remember that company, HyGen, that I contacted about my research on human/animal hybrids?
+            James: I do and I did my research on them as well.
+            I: what did you find out?
+            James: the HyGen brand seems like a cover: their website is actually registered to <>
+            a company that manages PR for the army...
+            James: stay away from those creeps, please
+            I: about that...
+        -- {->james_chat|}
         ~ knows_james = true
 - {not knows_hygen:->computer} {not knows_james:->computer}
 You hear the engine of an unknow car approaching your house and you quickly turn off the computer and run upstairs.
