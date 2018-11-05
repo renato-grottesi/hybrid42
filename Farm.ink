@@ -1,5 +1,5 @@
 === farm_begin ===
-Monday 1st of November 2018
+Monday 2th of August 2018
 You wake in your bed, your tail below your head like a pillow.
 You jump out the bed and stretch you legs.
 "{kat_name}, come down! Breakfast is ready!" calls your mother from the kitchen.
@@ -91,7 +91,7 @@ VAR knows_james = 0
         ** Play online
             You connect to the server and your friend James asks you to have a private chat with him.
             ~ email_james = true
-    + {email_james} [Chat with James]
+    + {email_james && knows_james <2 } [Chat with James]
         {knows_james==0:James: hey {kat_name}!}
         {knows_james==0:I: sorry for forgetting to join the game yesterday evening...}
         {knows_james==0:I: I was so tired that I felt asleep on the sofa.}
@@ -113,29 +113,50 @@ VAR knows_james = 0
         -- 
 - {not knows_hygen:->computer} {knows_james<2:->computer}
 You hear the engine of an unknow car approaching your house and you quickly turn off the computer and run upstairs.
-    * Sit in bed
+    * [Sit in bed]
         You sit on your bed and start checking your phone.
         Your feline hearing is so good that you start discerning the sound of a <>
-    * Check the window
+    * [Check the window]
         You carefully peek behind the curtain and you notice that there is black SUV car followed by a <>
     - big van that reminds you of the one from the A-Team.
 You get very suspicious about the situation and you close the door of your bedroom.
 The cars stop by the entrance and you can see two man in suites coming out of the SUV and four soldiers in <>
 camouflage jumping out from the black van.
-LIST inventory = (none), photo, snack, blanket
+LIST inventory = (none), photo, snack, blanket, syringe
 VAR window_open = false
-    * Take a photo
+    * [Take a photo]
         You carefully put your phone behind the curtain and get a few photos of the men and their vehicles.
         ~ inventory += photo
-    * Open the window
+    * [Open the window]
         You carefully unlock the window and open it just enough to hear the voices of the men.
         ~ window_open = true
-    * Prepare a bagpack
+    * [Prepare a backpack]
         You get your backpack and fill it with useful items that you can use in case you should escape.
     ~ inventory += blanket + snack
 - You hear your mother opening the main door.
-{window_open:
-From the open window you can hear that a man is asking her if she saw any unusual creature wandering around the area.|
-You can hear a man voice talking to your mother, but you cant clearly hear the dialogue with the window closed.}
+{window_open:From the open window you can hear that a man is asking her if she saw any unusual creature wandering around the area.|You can hear the voice of a man talking to your mother, but you can't clearly hear the dialogue with the window closed.}
+"Don't you dare come inside!" your mother shout.
+"Let go of me!" she screams.
+The phone vibrates.
+    * [Check phone]
+        An sms from your father just says "run!"
+    * [Check your mother]
+        You open the door and see your mother held by a men in suite while two soldiers are checking the living room.
+        Everyone's attention focus on you and your mather screams "Run!"
+- You don't think about it twice, you grab your backpack, run towards the window{window_open: open it wide|, struggle to open it while you hear the soldiers running upstairs, eventually manage to spread it wide} and jump to the branch of the oak tree.
+"Hey you assholes! What are you doing in my property?" your father screms at the soldiers to distract them.
+He clearly looks your way with a confident look that says "go {kat_gender==male:son|daughter}, I'll handle these intruders".
+    * [run towards the fields]
+        The corn field is the perfect hiding place. You jump from the oak tree to another one and eventually run towards the tall plants.
+        You don't know what is going to happen to your parents, but you trust their though skin.
+    * [run toward the orchard]
+        The fruit trees in the orchards are full of leaves. You jump down the oak tree and run towards the trees. A soldier spot you and you see your father punching him in the arm to disarm him. You run as fast as you can, but they start shooting at you.
+        ** [keep running straight]
+            You keep running through the orchard, while the soldiers shoot at you. One projectile hits your backpack, but doesn't kill you. Eventually you reach the forest on the hills and you are sure that you lost your pursuers.
+            ~inventory+=syringe
+        ** [head towards the corn field]
+            You change trajectory an enter the corn field, full of tall plants that hide you from your pursuers. Soon you lose them.
+- Feeling safe, you head towards the cave in the middle of the forest where you have been playing since a small child.
+{inventory?syringe:You check your backpack and notice that a syring is hanging from it. They were shooting narcotics at you. You pick the syring and save it in your backpack: it may come into use later.}
 
 -> end
