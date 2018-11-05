@@ -47,8 +47,8 @@ and now by yourself.
 = study
     * [Turn on computer]
     * [Open book]
-        You pick up the algebra book, but the images of the other hybrids from your dream are still clear in your mind <>
-        and you can't stay focused.
+        You pick up the algebra book, but the images of the other hybrids from your dream are still clear in your <>
+        mind and you can't stay focused.
         -> study
 - You turn on your computer to check if there have been any news related to the discovery of somebody like you.
 -> computer
@@ -65,8 +65,8 @@ VAR knows_james = 0
             is everything fine?
             ~ unread = unread-1
             ~ email_james = true
-            "Dammit! I forgot to join the game yesterday! I should better try to contact James in the game chat later." <>
-            you remember.
+            "Dammit! I forgot to join the game yesterday! I should better try to contact James <>
+            in the game chat later." you remember.
         ** [Read email from HyGen]
             Dear {kat_gender==male:Mr|Miss} {kat_name},
             we have some information regarding your inquiry on the progress of our research on human/animal hybrids, <>
@@ -120,7 +120,8 @@ You hear the engine of an unknow car approaching your house and you quickly turn
         You carefully peek behind the curtain and you notice that there is black SUV car followed by a <>
     - big van that reminds you of the one from the A-Team.
 You get very suspicious about the situation and you close the door of your bedroom.
-The cars stop by the entrance and you can see two man in suites coming out of the SUV and four soldiers in camouflage jumping out from the black van.
+The cars stop by the entrance and you can see two man in suites coming out of the SUV and four soldiers in <>
+camouflage jumping out from the black van.
 LIST inventory = (none), photo, snack, blanket
 VAR window_open = false
     * Take a photo
@@ -133,5 +134,8 @@ VAR window_open = false
         You get your backpack and fill it with useful items that you can use in case you should escape.
     ~ inventory += blanket + snack
 - You hear your mother opening the main door.
-{window_open: From the open window you can hear that a man is asking her if she saw any unusual creature wandering around the area.|You can hear a man voice talking to your mother, but you cant clearly hear the dialogue with the window closed.
+{window_open:
+From the open window you can hear that a man is asking her if she saw any unusual creature wandering around the area.|
+You can hear a man voice talking to your mother, but you cant clearly hear the dialogue with the window closed.}
+
 -> end
