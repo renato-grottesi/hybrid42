@@ -1,5 +1,5 @@
 === farm_begin ===
-Monday 2th of August 2018
+Monday 24th of September 2018
 You wake in your bed, your tail below your head like a pillow.
 You jump out the bed and stretch you legs.
 "{kat_name}, come down! Breakfast is ready!" calls your mother from the kitchen.
@@ -144,7 +144,7 @@ The phone vibrates.
         You open the door and see your mother held by a men in suite while two soldiers are checking the living room.
         Everyone's attention focus on you and your mather screams "Run!"
 - You don't think about it twice, you grab your backpack, run towards the window{window_open: open it wide|, struggle to open it while you hear the soldiers running upstairs, eventually manage to spread it wide} and jump to the branch of the oak tree.
-"Hey you assholes! What are you doing in my property?" your father screms at the soldiers to distract them.
+"Hey you assholes! What are you doing in my property?" your father screams at the soldiers to distract them.
 He clearly looks your way with a confident look that says "go {kat_gender==male:son|daughter}, I'll handle these intruders".
     * [run towards the fields]
         The corn field is the perfect hiding place. You jump from the oak tree to another one and eventually run towards the tall plants.
@@ -158,5 +158,22 @@ He clearly looks your way with a confident look that says "go {kat_gender==male:
             You change trajectory an enter the corn field, full of tall plants that hide you from your pursuers. Soon you lose them.
 - Feeling safe, you head towards the cave in the middle of the forest where you have been playing since a small child.
 {inventory?syringe:You check your backpack and notice that a syring is hanging from it. They were shooting narcotics at you. You pick the syring and save it in your backpack: it may come into use later.}
-
+->options
+=options
+You consider your options:
+    * [Keep hiding in the cave]
+        The cave is a safe place where they will never find you, but it's quite cold.
+        {inventory?blanket:Luckily you remembered to pack a blanket in your backpack and you keep hiding. You hear footsteps outside, but they didn't notice the narrow opening of the cave. You keep waiting until it gets dark outside.|->options}
+    * [Look for a warmer shelter]
+        You reluctantly abandon your shelter and start looking for a warmer shelter. Your feline hearing picks the sound of footsteps approaching from downhill. 
+        ** [Hide in a tree]
+            There is big bushy maple tree not too far. You reach the trunk in no time and climb up, hiding yourself in the dense foliage. They will never find you up here. After a while you hear the sound of a soldier's boots stumping on the ground below. The soldier stops. You realize that you didn't conceal your footprints. An moment that feels like an eternity passes. You conquer your fear and look down: the soldier is just sitting on the bottom of the tree checking his phone. After a while he stands up and walks away. You keep waiting sitting you your branch for several hours, until you feel safe to climb down.
+        ** [Run uphill]
+    * [Contact your parents]
+        Although it may be comforting to turn on your phone and contact your parents, you realize that those bad people may still be holding them captive and they can setup a trap for you.
+        -> options
+    * [Contact James]
+        James is your best friend and he can surely hide you in his house if you can contact him. You realize that turning on your phone may give away your position to your pursuers, so you prefer keeping it off and wait to contact James until you can find an open WiFi network.
+        -> options
+- The best hope you have at surviving now is to find a way to contact James.
 -> end
