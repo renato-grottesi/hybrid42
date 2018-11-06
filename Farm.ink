@@ -195,13 +195,63 @@ You turn on your phone and switch on the WiFi only while in airplane mode to avo
         You try your luck and fail.
     * [Try "mandys"]
         You try to be smart and fail.
--
+- You are thirsty, hungry and you need to find the password for the WiFi.
 -> gas_station
 = gas_station
-You need to find the password. And you are starving.
+VAR ate_food = false
+VAR drunk_ water = false
+VAR has_passwd = false
     * [Check your backpack]
-        {inventory?snack: Luckily, you remembered to pack a snack before leaving home this morning. You eat up the whole bag of pork cracklings and feel full of energy.|Nothing useful insides...}
+        {
+        - inventory?snack && not ate_food:
+            Luckily, you remembered to pack a snack before leaving home this morning.<>
+            You eat up the whole bag of pork cracklings and feel full of energy.
+            ~ ate_food = true
+            ~ inventory-=snack
+        - inventory?snack && ate_food:
+            You see the bag of pork cracklings that you packed this morning laying in your backpack.
+            You suddenly regret eating from a garbage bin like a stray cat...
+        -else:
+            No food insides...
+        }
+        At the bottom of your backpack you find the water bottle and suddenly realize why it was so heavy.
+        ~ drunk_weter = true
     * [Check the garbage bin]
+        {
+        - ate_food:
+            Nothing but garbage in the garage bin. You are not surprised.
+        - else:
+            Your stomach rumble and you decide to pickup some food from the bin.
+            You eat an half consumed burger from a paper bag and you are surprised that it still tastes good.
+            While chewing the french fries, you read the receipt absent minded, then you notice that it contains the WiFi password!
+            ~ ate_food = true
+            ~ has_passwd = true
+        }
     * [Check the toilet]
+        You visit the toilet and <>
+        {
+            - drunk_water:
+                fill your water bottle on your way out.
+            - else:
+                drink some water from the sink.
+                ~ drunk_water = true
+        }
+        You hear someone approaching and you hide yourself in a toilet.
+        A middle-aged {kat_gender==male:man|woman} enters the toilet and your sensitive smell is sending pulses of pain to your brain for 5 good minutes...
+        When you are sure to be alone, you go out the toilet and you notice that the {kat_gender==male:man|woman} who had a bad dinner left a receipt from the restaurant on the sink. You confirm that the dish responsible for the horror was a taco and you are about to put the ticket down, when you notice that it contains the WiFi password!
+- {drunk_water && eat_food && has_passwd : |  -> gas_station}
+You turn on your phone, insert the password from the receipt and anxiously wait for the waiting animation to complete. You are connected.
+A few notifications from various messaging and email app pop-up.
+-> phone_notifications
+= phone_notifications
+    * [Mom]
+        "{kat_name}, please come home. We miss you.". You wonder how someone in the army can come up with such a stupid and lame attempt of luring you back before deleting the message
+    * [Dad]
+        "run!", your father sent you this morning when he was distracting the soldiers. It feels like a week has pasted since then...
+    * [HyGen]
+    * [James]
+    * [itch.io]
+        This week's staff picks:
+        Throwboat, Onychophora and Consciousness Beam
 -
 -> end
