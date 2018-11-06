@@ -191,10 +191,11 @@ You consider your options:
 - The best hope you have at surviving now is to find a way to contact James.
 With the cover of darkness you walk towards a nearby gas station and restaurant called Mandy's.
 You turn on your phone and switch on the WiFi only while in airplane mode to avoid being tracked. There is a WiFi signal, but Mandy's network requires a password.
-    * [Try 123456]
+    * [Try "123456"]
         You try your luck and fail.
-    * [Try mandys]
+    * [Try "mandys"]
         You try to be smart and fail.
+-
 -> gas_station
 = gas_station
 You need to find the password. And you are starving.
@@ -202,4 +203,5 @@ You need to find the password. And you are starving.
         {inventory?snack: Luckily, you remembered to pack a snack before leaving home this morning. You eat up the whole bag of pork cracklings and feel full of energy.|Nothing useful insides...}
     * [Check the garbage bin]
     * [Check the toilet]
+-
 -> end
