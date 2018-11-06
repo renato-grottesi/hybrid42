@@ -160,6 +160,7 @@ He clearly looks your way with a confident look that says "go {kat_gender==male:
 {inventory?syringe:You check your backpack and notice that a syring is hanging from it. They were shooting narcotics at you. You pick the syring and save it in your backpack: it may come into use later.}
 ->options
 =options
+VAR soldiers_forest = false
 You consider your options:
     * [Keep hiding in the cave]
         The cave is a safe place where they will never find you, but it's quite cold.
@@ -169,6 +170,18 @@ You consider your options:
         ** [Hide in a tree]
             There is big bushy maple tree not too far. You reach the trunk in no time and climb up, hiding yourself in the dense foliage. They will never find you up here. After a while you hear the sound of a soldier's boots stumping on the ground below. The soldier stops. You realize that you didn't conceal your footprints. An moment that feels like an eternity passes. You conquer your fear and look down: the soldier is just sitting on the bottom of the tree checking his phone. After a while he stands up and walks away. You keep waiting sitting you your branch for several hours, until you feel safe to climb down.
         ** [Run uphill]
+            You run uphill, away from the soldiers. You have never been in this area.
+            *** [Turn back]
+                Something doesn't feel safe. You can't point out what it is, but you trust your instincts and start to carefully walk backwards in the hope that the soldiers took a different paths. But they didn't. They see you and start running after you. Suddenly you hear them shouting and look back to see them surrounded by a pack of wolves. They <>
+                ~ soldiers_forest = true
+            *** [Continue]
+                You ignore your fears and keep walking in the forest. You hear a crackling sound, someone is walking towards you, but it's not the sound of soldier's boots. Then you see them: a pack of 6 wolves is slowly surrounding you. 
+                **** [Climb a tree]
+                    You run towards the nearest tree and climb to a safe branch. The wolves walk frantically below you. You throw some pinecones at them, but you're only making them more nervous. Then you hear the sound of soldiers approaching. The wolves do as well. You throw a pinecone in the soldiers' direction to attract their attention and conceal yourself in the branches higher up the tree. From your hiding place you see the soldiers and wolves preparing to engage in a battle. One wolf haul and the soldiers <>
+                **** [Charge at the wolves]
+                    It's time for action. You run towards a wolf and jump high above his head, going back to the path from where you came from. The pack follows you. Suddenly you see the soldiers on your right and you run towards them while they are unprepared to attack you. When they see you it's too late to capture you: they see the wolves as well and they <>
+---drop their tranquillizer guns and pick up the shotguns in their belts to defend themselves against the beasts. At least now you know that they weren't planning to kill you. One soldiers shoot and kills a wolf. The pack backs up a few steps, but then some hauling from uphill drain the hope if the soldiers that start running away chased by the wolves. You exploit the situation to run back to a safer place{inventory?syringe:, but first you pick up a tranquillizer syringe that the soldiers left behind}.
+                    ~ inventory += syringe
     * [Contact your parents]
         Although it may be comforting to turn on your phone and contact your parents, you realize that those bad people may still be holding them captive and they can setup a trap for you.
         -> options
@@ -176,4 +189,17 @@ You consider your options:
         James is your best friend and he can surely hide you in his house if you can contact him. You realize that turning on your phone may give away your position to your pursuers, so you prefer keeping it off and wait to contact James until you can find an open WiFi network.
         -> options
 - The best hope you have at surviving now is to find a way to contact James.
+With the cover of darkness you walk towards a nearby gas station and restaurant called Mandy's.
+You turn on your phone and switch on the WiFi only while in airplane mode to avoid being tracked. There is a WiFi signal, but Mandy's network requires a password.
+    * [Try 123456]
+        You try your luck and fail.
+    * [Try mandys]
+        You try to be smart and fail.
+-> gas_station
+= gas_station
+You need to find the password. And you are starving.
+    * [Check your backpack]
+        {inventory?snack: Luckily, you remembered to pack a snack before leaving home this morning. You eat up the whole bag of pork cracklings and feel full of energy.|Nothing useful insides...}
+    * [Check the garbage bin]
+    * [Check the toilet]
 -> end
