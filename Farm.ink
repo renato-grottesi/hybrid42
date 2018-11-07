@@ -68,7 +68,7 @@ VAR knows_james = 0
             "Dammit! I forgot to join the game yesterday! I should better try to contact James <>
             in the game chat later." you remember.
         ** [Read email from HyGen]
-            Dear {kat_gender==male:Mr|Miss} },
+            Dear {kat_gender==male:Mr|Miss} {kat_name},
             we have some information regarding your inquiry on the progress of our research on human/animal hybrids, <>
             but we would rather not use email for such sensitive information.
             Would you be able to arrange a meeting with us?
@@ -278,4 +278,23 @@ VAR can_contact_james = false
 - -> phone_notifications
 -> contact_james
 = contact_james
+    * [Be sorry]
+        "James...?"
+        "sorry that I didn't answer your messages, but I did something stupid, they came for me, attacked my parents and I run away and hide myself somewhere safe."
+    * [Be brave]
+        "so many messages! I was a bit busy escaping from some kidnappers, so I didn't have much time to answer..."
+    * [Be an asshole]
+        "you fucking hack my home webcams to spy on me?!"
+- "anyway... I only now found some WiFi connection at a gas station and managed to contact you."
+You wait for a response.
+"are you there?" you type stressed.
+"{kat_name}! You are out there safe!", James finally answers.
+"sorry for hacking in your house, but I was genuinely worried about your silence after what I found out about HyGen and after you mentioned them again.", he apologizes.
+"where are you? should I pick you up?", he asks.
+* [At Mandy's]
+"I'm at some gas station called Mandy's. I can't be too far from home.", you explain.
+"OK, I found it on Google Maps. That's quite a ride from where I live. I can be there in 3 hours. We'll meet at 23:00 sharp behind the car wash building. Now turn off your phone and wait there."
+"thanks...", you simply answer and turn off your phone.
+You spend the next three hours sitting on the back of the restaurant building, {inventory? blanket: covered by the warm blanket that you packed this morning. |under the warm coming from the ventilation system. You are so cold, that you don't mind smelling like a mix of hamburger, french fries and apple pie.}
+
 -> end
