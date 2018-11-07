@@ -273,7 +273,7 @@ VAR can_contact_james = false
     * [itch.io]
         This week's staff picks:
         Throwboat, Onychophora and Consciousness Beam
-    + {can_contact_james: Contact James}
+    + {can_contact_james}[Contact James]
         -> contact_james
 - -> phone_notifications
 -> contact_james
@@ -285,7 +285,7 @@ VAR can_contact_james = false
         "so many messages! I was a bit busy escaping from some kidnappers, so I didn't have much time to answer..."
     * [Be an asshole]
         "you fucking hack my home webcams to spy on me?!"
-- "anyway... I only now found some WiFi connection at a gas station and managed to contact you."
+    - "anyway... I only now found some WiFi connection at a gas station and managed to contact you."
 You wait for a response.
 "are you there?" you type stressed.
 "{kat_name}! You are out there safe!", James finally answers.
