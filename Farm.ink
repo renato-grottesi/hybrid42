@@ -68,7 +68,7 @@ VAR knows_james = 0
             "Dammit! I forgot to join the game yesterday! I should better try to contact James <>
             in the game chat later." you remember.
         ** [Read email from HyGen]
-            Dear {kat_gender==male:Mr|Miss} {kat_name},
+            Dear {kat_gender==male:Mr|Miss} },
             we have some information regarding your inquiry on the progress of our research on human/animal hybrids, <>
             but we would rather not use email for such sensitive information.
             Would you be able to arrange a meeting with us?
@@ -244,14 +244,38 @@ You turn on your phone, insert the password from the receipt and anxiously wait 
 A few notifications from various messaging and email app pop-up.
 -> phone_notifications
 = phone_notifications
+VAR can_contact_james = false
     * [Mom]
-        "{kat_name}, please come home. We miss you.". You wonder how someone in the army can come up with such a stupid and lame attempt of luring you back before deleting the message
+        "{kat_name}, please come home. We miss you.". You wonder how someone in the army can come up with such a stupid and lame attempt of luring you back before deleting the message.
     * [Dad]
         "run!", your father sent you this morning when he was distracting the soldiers. It feels like a week has pasted since then...
     * [HyGen]
+        Dear {kat_gender==male:Mr|Miss} {kat_name},
+        we are still interested in sharing with you our advances in human animal hybrids.
+        We can arrange a taxi to pick you up at your convenience and at our expenses. Please give us a location and time.
+        Best regards, 
+        HyGen.
+
+        "So now they want a location? It must have been HyGen that sent those men to my house this morning!", you realize
     * [James]
+         "about that wath?!"
+         "don't tell me that you fucking contacted HyGen!"
+         "{kat_name}?"
+         "you haven't been online in hours, that's not like you..."
+         "it is versus my code of conduct, but if you don't check in within a hour, I'll hack your PC and check your camera."
+         "Holy Shit. They are there."
+         "I didn't see you from any camera or hear you from any microphone"
+         "if you managed to run away from them and you need anything, contact me in this encrypted application and I'll do whatever I can."
+         "Don't open any other applications, don't answer nobody else and obviously don't turn on the data connection of your phone, or they'll track you!"
+
+         A smile appears on your face. At least you can count on James to help you.
+        ~ can_contact_james = true
     * [itch.io]
         This week's staff picks:
         Throwboat, Onychophora and Consciousness Beam
--
+    + {can_contact_james: Contact James}
+        -> contact_james
+- -> phone_notifications
+-> contact_james
+= contact_james
 -> end
