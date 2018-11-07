@@ -296,5 +296,44 @@ You wait for a response.
 "OK, I found it on Google Maps. That's quite a ride from where I live. I can be there in 3 hours. We'll meet at 23:00 sharp behind the car wash building. Now turn off your phone and wait there."
 "thanks...", you simply answer and turn off your phone.
 You spend the next three hours sitting on the back of the restaurant building, {inventory? blanket: covered by the warm blanket that you packed this morning. |under the warm coming from the ventilation system. You are so cold, that you don't mind smelling like a mix of hamburger, french fries and apple pie.}
+    * [Check Phone] 
+        You turn on your phone. It's 22:55 and still no sign of James.
+    * [Check Internet]
+        Ignoring James' advice of keeping your phone shut down, you check the news, but you are too afraid of checking your social media profiles.
+    * [Play a videogame]
+        You play an offline Android game called Throwboat and you have a lot of fun playing Vikings on a magic boat.
+    * [Wait]
+        James said to not connected to the internet. You follow his advice and stay safe. Waiting a few more minutes won't kill you.
+- You hear the sound of a car parking and it is eleven sharp. You shut down the phone and store it in your pocket. Suddenly you are extremely nervous about meeting James for the first time after being friends for so many years. You wrap your tail around your hips and put up the hoodie to cover your ears. 
+"{kat_name}...", you hear someone whispering.
+-> wait_hidden
+= wait_hidden
+    *[Wait in the dark meeting point]
+        James has been very clear about meeting behind the car wash, so you wait there. 
+        "{kat_name}, it's James. I came to pick you up. Come out if you are there."
+        -> wait_hidden
+    *[Walk towards the voice]
+- You walk towards James. Your feline eye sight recognize him very well from his profile picture.
+"James, I'm here!", you answer.
+"Oh, thanks God you are safe! Let's go in the car and we'll talk on the way to my place!", he says a bit worried.
+   * ["Before you get scared..."]
+        "James, I don't want you to get scared when you'll see my face, so I should warn you before. 
+   * ["I should tell you something..."]
+        "I have something to tell you before stepping towards the light. 
+   * ["Nice to meet you, and by the way..."]
+        "I'm glad you came as well. Nice to meet you in person, I guess." you smile. "Before I'm coming there let me warn you. 
+- <> You know when I told you that I used Photoshop to create my profile picture and you were all impressed with my skills: I lied"
+"What does that even... Let's go {kat_name}, the earlier we leave this area,the less risks we face."
+[Step towards the lit area]
+You step towards James and under the neon light, rising your eyes to meet James'. 
+"What the fuck!", James exclaims surprised. " Why are you wearing a cat mask and why are your eyes shiny?"
+    * [Laugh]
+        "Eheh! It's not a mask!"
+    * [Apologize]
+        "Sorry for keeping it a secret after so many years"
+    - <>, then you explain "James, I'm a hybrid between a human and a cat."
+"Holy shit!", he exclaims and you are are impressed at how well he took the news. "At least that explains why those HyGen freaks tried so hard to hunt you down. Hunt you in a human way! I'm not saying that you are an animal! Oh, I guess I'm not that good with first impressions...".
+"As you may guess I'm not good at first impressions either!", you joke and you both laugh.
+"Let's go in the car.", he invites you., You leave the gas station and you already feel warmer and safer.
 
 -> end
