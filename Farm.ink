@@ -199,7 +199,7 @@ You turn on your phone and switch on the WiFi only while in airplane mode to avo
 -> gas_station
 = gas_station
 VAR ate_food = false
-VAR drunk_ water = false
+VAR drunk_water = false
 VAR has_passwd = false
     * [Check your backpack]
         {
@@ -215,7 +215,7 @@ VAR has_passwd = false
             No food insides...
         }
         At the bottom of your backpack you find the water bottle and suddenly realize why it was so heavy.
-        ~ drunk_weter = true
+        ~ drunk_water = true
     * [Check the garbage bin]
         {
         - ate_food:
@@ -239,7 +239,7 @@ VAR has_passwd = false
         You hear someone approaching and you hide yourself in a toilet.
         A middle-aged {kat_gender==male:man|woman} enters the toilet and your sensitive smell is sending pulses of pain to your brain for 5 good minutes...
         When you are sure to be alone, you go out the toilet and you notice that the {kat_gender==male:man|woman} who had a bad dinner left a receipt from the restaurant on the sink. You confirm that the dish responsible for the horror was a taco and you are about to put the ticket down, when you notice that it contains the WiFi password!
-- {drunk_water && eat_food && has_passwd : |  -> gas_station}
+- {drunk_water && ate_food && has_passwd : |  -> gas_station}
 You turn on your phone, insert the password from the receipt and anxiously wait for the waiting animation to complete. You are connected.
 A few notifications from various messaging and email app pop-up.
 -> phone_notifications
