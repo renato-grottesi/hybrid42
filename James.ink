@@ -47,6 +47,37 @@ You wake up in a comfortable bed, with little memory if how you went from the ca
 James picks a laptop from his back and types something, then he gives it to you.
 "Here, this is a laptop with a remote terminal open with one of the HyGen employees that I phished this morning: do your best at finding information and don't worry about being found, since we are behind many layers of bouncing connections.", he smiles with pride.
 "Wow, you surely are something... I'll try my best!"
+LIST pwd = (root), documents, downloads, pictures
+= hack_puzzle
+    + List Files
+        { pwd:
+            - root:
+                Files in root
+            - documents:
+                Docs
+            - downloads
+                Illegal Fikes
+            - pictures
+                Nothing too bad
+        }
+        -> hack_puzzle
+    + Change Directory
+        ++ Root
+            ~ pwd = root
+        ++ Documents
+            ~ pwd = documents
+        ++ Downloads
+            ~ pwd = downloads
+        ++ Pictures
+            ~ pwd = pictures
+        --
+        -> hack_puzzle
+    + Show File
+        -> hack_puzzle
+    * Check backpack
+        -> hack_puzzle
+- "James, I think that I found something quite interesting...", you say quite excited.
+"What is it?", he asks interested.
 
 
 ->end
