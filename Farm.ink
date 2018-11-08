@@ -336,45 +336,4 @@ You step towards James and under the neon light, rising your eyes to meet James'
 "As you may guess I'm not good at first impressions either!", you joke and you both laugh.
 "Let's go in the car.", he invites you., You leave the gas station and you already feel warmer and safer.
 
-Sunday 25th of September 2018
-You wake up in a comfortable bed, with little memory if how you went from the car to the bed. You leave the bedroom and find James typing on a laptop while eating a sandwich.
-"You surely sleep a lot!", he points out. "Breakfast is in the fridge. I guess you like milk?".
-    * [I love milk!]
-        "Thanks! I love milk!", you exclaim enthusiastic and grab a bottle from the fridge.
-    * [Do you have any meat?]
-        "I like milk, but I had very little food yesterday. Do you have any meat?", you ask as politely as you can.
-        "Sure! I should have some bacon. Anyway, check the fridge and eat what you want!"
-- You join James on the table with your breakfast.
--> morning_chat
-= morning_chat
-    * [What are you checking?]
-        "You look very busy with the computer. What are you checking?", you ask.
-        "I want to learn as much as I can about this HyGen. I managed to enter their first layer of security, but it's more about managing the facade web site.", he explains.
-        "Please be careful with them! They were armed when they visited my house yesterday...", you warn him.
-        "I know... However they are doing some quite unethical experiments and I, or even better the whole world, must know the truth. Especially you {kat_name}, don't you want to know where you came from?", he asks.
-        You asked yourself the same many times, but you never have been so sure about the answer as now: "Yes, I do want to know.".
-        James smiles back at you.
-    * [Sorry for falling asleep.]
-        "Sorry for falling asleep in the car, but I was exhausted and you were correct assuming that I slept more than a human, although not as much as a cat.", you explain.
-        "Don't even worry! I was just glad to have found you!", he reassures you.
-    * [Do you live alone?]
-        "Where are your parents? Do you live alone?", you curiosity ask.
-        "My parents are divorced and right now each believe I'm spending the day with the other.", James explain.
-        "But if they're in their homes, in which home are we?", you ask confused.
-        " We are in the house if some dude that is spending the week in some AirBnB up in the north. I didn't bother driving all the way back, so I found a closer place where to hide. Of course don't open the door if someone knocks!".
-        You are astonished at James' hacking skills. "You surely are something when it comes to hacking!", you congratulate him.
-        "Eheh", he blushes.
-    * [Did you sleep in the couch?]
-        "Thanks for letting me sleep in the bed. Did you sleep in the couch?", you ask.
-        "No, I took another bedroom upstairs.", he replies.
-        You start to realize that this house is quite big.
-- [-> morning_chat| -> morning_chat| -> morning_chat| -> morning_chat|]
-"Thanks for the food.", you say while filling the dish washer.
-"You realize that it's not my food and that you can leave the dishes in the sink, right?", he laughs at your politeness and you laugh back.
-    * [Check phone]
-        You pick your phone to check for notifications and James stops you: "Please keep your phone off. I got this brand new Android phones set-up with a heavily anonymous virtual private network and with an engine that will automatically connect to any WiFi network in range. It also constantly fake the location on untrusted apps, so you will be safe."
-
-    * [Offer to help]
--
-
--> end
+-> james

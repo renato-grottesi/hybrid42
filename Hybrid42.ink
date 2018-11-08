@@ -5,6 +5,8 @@ LIST gender = male, female
 VAR kat_gender = male
 VAR kat_name = "Kato"
 INCLUDE Farm.ink
+INCLUDE James.ink
+
 
 === intro ===
 Sunday 24th of December 2001
