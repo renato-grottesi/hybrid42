@@ -371,5 +371,10 @@ You wake up in a comfortable bed, with little memory if how you went from the ca
 - [-> morning_chat| -> morning_chat| -> morning_chat| -> morning_chat|]
 "Thanks for the food.", you say while filling the dish washer.
 "You realize that it's not my food and that you can leave the dishes in the sink, right?", he laughs at your politeness and you laugh back.
+    * [Check phone]
+        You pick your phone to check for notifications and James stops you: "Please keep your phone off. I got this brand new Android phones set-up with a heavily anonymous virtual private network and with an engine that will automatically connect to any WiFi network in range. It also constantly fake the location on untrusted apps, so you will be safe."
+
+    * [Offer to help]
+-
 
 -> end
