@@ -9,6 +9,14 @@ INCLUDE James.ink
 
 
 === intro ===
+CHEAT
+    * Farm
+        -> farm_begin
+    * James
+        -> james
+    * Continue
+-
+
 Sunday 24th of December 2001
 
 You wake up inside your basket baby cradle.

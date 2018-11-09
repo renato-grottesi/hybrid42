@@ -36,6 +36,7 @@ You wake up in a comfortable bed, with little memory if how you went from the ca
         You start to realize that this house is quite big.
         -> morning_chat
     * ->
+-
 "Thanks for the food.", you say while filling the dish washer.
 "You realize that it's not my food and that you can leave the dishes in the sink, right?", he laughs at your politeness and you laugh back.
     * [Check phone]
@@ -48,17 +49,18 @@ James picks a laptop from his back and types something, then he gives it to you.
 "Here, this is a laptop with a remote terminal open with one of the HyGen employees that I phished this morning: do your best at finding information and don't worry about being found, since we are behind many layers of bouncing connections.", he smiles with pride.
 "Wow, you surely are something... I'll try my best!"
 LIST pwd = (root), documents, downloads, pictures
+-> hack_puzzle
 = hack_puzzle
     + List Files
         { pwd:
             - root:
-                Files in root
+                documents, downloads, pictures, settings.conf
             - documents:
-                Docs
-            - downloads
-                Illegal Fikes
-            - pictures
-                Nothing too bad
+                report.txt
+            - downloads:
+                not_a_virus.exe, throwboat.apk
+            - pictures:
+                summer.png, scan.png
         }
         -> hack_puzzle
     + Change Directory
@@ -72,10 +74,39 @@ LIST pwd = (root), documents, downloads, pictures
             ~ pwd = pictures
         --
         -> hack_puzzle
-    + Show File
-        -> hack_puzzle
+    + Show Files
+        -> filer
     * Check backpack
         -> hack_puzzle
+= filer
+    { pwd:
+        - root:
+            + settings.conf
+                settings for user cjohnson
+                room = saphire3.4
+                printer = tiger3
+            -> hack_puzzle
+        - documents:
+            + report.txt
+                Investements in online advertisements are going to be reduced by 10% next year due to fall in click rates.
+                Fundings will be diverted into charity events and government lobbying.
+            -> hack_puzzle
+        - downloads:
+            + not_a_virus.exe
+                You are not opening that one...
+            -> hack_puzzle
+            + throwboat.apk
+                You know that game! It's one of your favourite.
+            -> hack_puzzle
+        - pictures:
+            + summer.jpeg
+                You see an happy photo at the beach.
+            -> hack_puzzle
+            + scan.png
+                The image shows the scanning of a boring financial document, but you notice something familiar.
+            -> hack_puzzle
+    }
+
 - "James, I think that I found something quite interesting...", you say quite excited.
 "What is it?", he asks interested.
 
