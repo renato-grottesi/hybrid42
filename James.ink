@@ -35,7 +35,7 @@ You wake up in a comfortable bed, with little memory if how you went from the ca
         "No, I took another bedroom upstairs.", he replies.
         You start to realize that this house is quite big.
         -> morning_chat
-    * -
+    * ->
 -
 "Thanks for the food.", you say while filling the dish washer.
 "You realize that it's not my food and that you can leave the dishes in the sink, right?", he laughs at your politeness and you laugh back.
@@ -111,6 +111,7 @@ VAR saw_scan = false
             -> hack_puzzle
             + scan.png
                 The image shows the scanning of a boring financial document dated two days ago, but you notice something familiar.
+                ~ saw_scan = true
             -> hack_puzzle
     }
 = hack_puzzle_done
@@ -143,7 +144,7 @@ Suddenly your phones vibrate at the same time.
 { was_printer_not_paper:
     Someone scanned a document for the construction of a new building.
     "My friend, we got extremely lucky! I'll put the blueprint of the buildings surrounding the new one through a matching scan over the most recent satellite images and we'll have an answer soon enough." he grins.
-: else
+- else:
     The heat map shows a few regions, but no clear winner.
     "I'll need to manually review those results, it may take a while, but it won't be too difficult.", James says.
 }

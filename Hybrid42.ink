@@ -9,7 +9,6 @@ INCLUDE James.ink
 
 
 === intro ===
-CHEAT
     * Farm
         -> farm_begin
     * James
