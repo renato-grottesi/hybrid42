@@ -35,7 +35,7 @@ You wake up in a comfortable bed, with little memory if how you went from the ca
         "No, I took another bedroom upstairs.", he replies.
         You start to realize that this house is quite big.
         -> morning_chat
-    * ->
+    * -
 -
 "Thanks for the food.", you say while filling the dish washer.
 "You realize that it's not my food and that you can leave the dishes in the sink, right?", he laughs at your politeness and you laugh back.
@@ -49,6 +49,7 @@ James picks a laptop from his back and types something, then he gives it to you.
 "Here, this is a laptop with a remote terminal open with one of the HyGen employees that I phished this morning: do your best at finding information and don't worry about being found, since we are behind many layers of bouncing connections.", he smiles with pride.
 "Wow, you surely are something... I'll try my best!"
 LIST pwd = (root), documents, downloads, pictures
+VAR saw_scan = false
 -> hack_puzzle
 = hack_puzzle
     + List Files
@@ -56,7 +57,7 @@ LIST pwd = (root), documents, downloads, pictures
             - root:
                 documents, downloads, pictures, settings.conf
             - documents:
-                report.txt
+                report.txt, interview.txt
             - downloads:
                 not_a_virus.exe, throwboat.apk
             - pictures:
@@ -76,8 +77,9 @@ LIST pwd = (root), documents, downloads, pictures
         -> hack_puzzle
     + Show Files
         -> filer
-    * Check backpack
-        -> hack_puzzle
+    * {saw_scan} [Check backpack]
+        Inside your backpack you find a copy of the letter that was found with you when you were abandoned at your adoptive parents farm. You have been studying the letter for a while before without much results, but now it hits you: it has the same watermark as the scan you found in the documents folder!
+        -> hack_puzzle_done
 = filer
     { pwd:
         - root:
@@ -91,6 +93,10 @@ LIST pwd = (root), documents, downloads, pictures
                 Investements in online advertisements are going to be reduced by 10% next year due to fall in click rates.
                 Fundings will be diverted into charity events and government lobbying.
             -> hack_puzzle
+            + interview.txt
+                Guidelines for a job interview in the genetics laboratory.
+                Candidates must show a strong loyalty, unquestioned respect for superiors, capable of working in group, military background is a plus.
+            -> hack_puzzle
         - downloads:
             + not_a_virus.exe
                 You are not opening that one...
@@ -100,15 +106,51 @@ LIST pwd = (root), documents, downloads, pictures
             -> hack_puzzle
         - pictures:
             + summer.jpeg
-                You see an happy photo at the beach.
+                You see an happy selfie at the beach. You try to identify the location and ask James for help.
+                "I have no clue about the location and I doubt that I can track it with some image recognition software...", he confess. "If only it had a geo tag, it would have been so much more easier.", he continues.
             -> hack_puzzle
             + scan.png
-                The image shows the scanning of a boring financial document, but you notice something familiar.
+                The image shows the scanning of a boring financial document dated two days ago, but you notice something familiar.
             -> hack_puzzle
     }
-
+= hack_puzzle_done
 - "James, I think that I found something quite interesting...", you say quite excited.
 "What is it?", he asks interested.
+"This users you gave me has a recent scan of a document with the same watermark as the paper I was found with when I was a baby."
+"So that confirms that you indeed come from an HyGen experiment, but how can it help us with finding them", he asks.
+VAR was_printer_not_paper = true
+    * [The Printer]
+        "That means that they have been using the same printer since I was born: maybe they didn't update it too often and it's easy to hack?", you explain.
+        "Good idea! Let me check...", he says before starting to type frantically on his laptop. "That was easy! I installed a scanner that will send an email to us for any printed it scanned document."
+    * [The paper]
+        ~ was_printer_not_paper = false
+        "That means that they have been using the same paper supplier since I was born.", you explain.
+        "That's indeed a very strange type of paper... It resembles those listings papers used in very old dot matrix printers. I'll put it through an image recognition scanning program that will give us a heatmap of the most likely locations where that paper is still in use.", James says.
+- While waiting for the results, you check your new phone and play some games, trying to remember what a normal life felt like, but then you miss your parents.
+* [About my parents]
+- "James... Can you check on my parents, please?", you ask your best friend.
+"Of course! Those intruders stole your laptop (not before I installed a tracking program), but I still have a connectionl at your TV's camera and microphone.", he answers.
+"I didn't even know that my TV had a camera...", you confess.
+"Eheh, many TV come with cameras for videoconference, but not many people use them. Anyway, here's a streaming.", he shows you.
+You see your parents sitting on the couch, your father hugging your mother while she rests her hand on his shoulder. You can't see them too clearly, but you know that your mother is crying.
+They are safe, at least.
 
+Suddenly your phones vibrate at the same time.
+* [Check phone]
+** Scan Result
+--
+-
+{ was_printer_not_paper:
+    Someone scanned a document for the construction of a new building.
+    "My friend, we got extremely lucky! I'll put the blueprint of the buildings surrounding the new one through a matching scan over the most recent satellite images and we'll have an answer soon enough." he grins.
+: else
+    The heat map shows a few regions, but no clear winner.
+    "I'll need to manually review those results, it may take a while, but it won't be too difficult.", James says.
+}
+"Do you mind if I take a nap?", you politely ask.
+""No, not at all! Be my guest!", he laughs at the thought thy this isn't even his house.
+You smile back and go to the bedroom where you fall asleep straight away.
+* [ZzzZZzzZ]
+- You wake up two hours later well tested.
 
 ->end
