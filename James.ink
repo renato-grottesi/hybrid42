@@ -137,9 +137,7 @@ You see your parents sitting on the couch, your father hugging your mother while
 They are safe, at least.
 
 Suddenly your phones vibrate at the same time.
-* [Check phone]
-** Scan Result
---
+* Scanning Results
 -
 { was_printer_not_paper:
     Someone scanned a document for the construction of a new building.
@@ -163,4 +161,22 @@ James is waiting for you in the living room, drinking some red juice in a glass 
     " No! It's Kevin Mitnick."
 - "Anyways" he continues "I managed to find their location, check.".
 James shows you a satellite image of a buildings complex surrounded by a perimeter wall.
+"Amazing!", you exclaim, "So what's the plan now?"
+James looks at you with a raised eyebrow: "Well... You are the one being targeted by some paramilitary agency who destroyed your and your parents lives. What do you want to do?", he asks you very directly.
+You think about it, about the broken tranquility of your daily routine, about your mother crying in a sofa and you answer: 
+    * [I want revenge]
+        "I want revenge for what they did to me and my family."
+    * [I want the truth]
+        "I want to know what they did to me and if there are others like me."
+    * [I want safety]
+        "I want to go back living a free and happy life, but I must get rid of them first."
+- "Then I'll help you infiltrate their base and get what you want.", he offers.
+"Let's pay a visit to my mother's house: I need to get some provisions for our trip.", James continues.
+"I thought that you could break in any house in our path...", you observe.
+"Of course I can! But I have left some special computers and my drone at home: they'll come in handy for our mission! Plus, my mother's house is just on the way to HyGen's secret base".
+You jump in the car and start the two and a half hours long drive during which James manages to play almost all the discography from Blink 182.
+You arrive at his mother's at twelve past nine in the evening.
+"Wait in the car and I'll be back soon.", James says.
+    * [OK]
+    * [Isn't it better if I join you]
 ->end
