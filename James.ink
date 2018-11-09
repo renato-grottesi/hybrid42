@@ -152,5 +152,14 @@ Suddenly your phones vibrate at the same time.
 You smile back and go to the bedroom where you fall asleep straight away.
 * [ZzzZZzzZ]
 - You wake up two hours later well tested.
-
+James is waiting for you in the living room, drinking some red juice in a glass of wine, a grin on his face and his feet over the coffee table.
+"Guess who is the best hacker in the world?", he asks.
+* [Mitnick]
+    "Kevin Mitnick?", you tease him.
+    "Eheh! The second best then."
+* [You]
+    "You?", you ask.
+    " No! It's Kevin Mitnick."
+- "Anyways" he continues "I managed to find their location, check.".
+James shows you a satellite image of a buildings complex surrounded by a perimeter wall.
 ->end
