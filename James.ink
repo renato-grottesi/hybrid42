@@ -178,19 +178,25 @@ You jump in the car and start the two and a half hours long drive during which J
 You arrive at his mother's at twelve past nine in the evening.
 "Wait in the car and I'll be back soon.", James says.
     * [Stay in the car]
-        "OK, I'll wait here, but don't take too long."
-        "I won't.", he promises.
-        You put the hoodie over your head and take a nap.
-        As soon as you start dreaming about being a ninja in Naruto's would, you wake up from the vibrating phone. You pull it out of your pocket and see an emergency call from James. 
+        -> stay_in_car
     * [Follow James]
-        "Can I join you: I don't feel comfortable waiting alone in a stolen car with my face..."
-        "Sure, but nobody ever comes in this area. This street just connects two small towns and there is anything interesting around here."
-        You both walk towards the house and enter from the back door that goes straight to the kitchen.
-        Your feline hearing notices some muffled movements and whisperings.
-        "James, is your mother home?", you whisper.
-        "No, she was planning to go out on a date since she thinks I'm with dad. Why are you asking?"
-        "Because I hear some noise from inside the house.", you explain.
-        "Probably it's just the dog.", he reassures you. "Stay here, drink a glass of milk and put some food in your backpack. I'll go upstairs to get my equipment and then we leave.", he continues.
-        "Okay. Let me know if you need help carrying your things."
-
+        -> go_inside
+= stay_in_car
+    "OK, I'll wait here, but don't take too long."
+    "I won't.", he promises.
+    You put the hoodie over your head and take a nap.
+    As soon as you start dreaming about being a ninja in Naruto's would, you wake up from the vibrating phone. You pull it out of your pocket and see an emergency call from James. 
+    -> escape
+= go_inside
+    "Can I join you: I don't feel comfortable waiting alone in a stolen car with my face..."
+    "Sure, but nobody ever comes in this area. This street just connects two small towns and there is anything interesting around here."
+    You both walk towards the house and enter from the back door that goes straight to the kitchen.
+    Your feline hearing notices some muffled movements and whisperings.
+    "James, is your mother home?", you whisper.
+    "No, she was planning to go out on a date since she thinks I'm with dad. Why are you asking?"
+    "Because I hear some noise from inside the house.", you explain.
+    "Probably it's just the dog.", he reassures you. "Stay here, drink a glass of milk and put some food in your backpack. I'll go upstairs to get my equipment and then we leave.", he continues.
+    "Okay. Let me know if you need help carrying your things."
+    -> escape
+= escape
 ->end
