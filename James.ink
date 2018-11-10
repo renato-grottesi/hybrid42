@@ -177,6 +177,9 @@ You think about it, about the broken tranquility of your daily routine, about yo
 You jump in the car and start the two and a half hours long drive during which James manages to play almost all the discography from Blink 182.
 You arrive at his mother's at twelve past nine in the evening.
 "Wait in the car and I'll be back soon.", James says.
-    * [OK]
-    * [Isn't it better if I join you]
+    * [Stay in the car]
+        "OK, I'll wait here, but don't take too long."
+    * [Follow James]
+        "Can I join you: I don't feel comfortable waiting alone in a stolen car with my face..."
+-
 ->end
