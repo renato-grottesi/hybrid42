@@ -1,19 +1,19 @@
 ->intro 
 
-LIST gender = male, female
-
-VAR kat_gender = male
+LIST kat_gender = (male), female
 VAR kat_name = "Kato"
+LIST inventory = (none), photo, snack, blanket, syringe, apple, scissors, cheese
+
 INCLUDE Farm.ink
 INCLUDE James.ink
-
+INCLUDE HyGen.ink
 
 === intro ===
+    * Begin
     * Farm
         -> farm_begin
     * James
         -> james
-    * Continue
 -
 
 Sunday 24th of December 2001
@@ -28,10 +28,10 @@ A middle age couple gasps when they see you and bring you inside the house.
 to unwrap you from the blanket.
 "There is a note pinned to the side of the cradle." says the man and starts to read it.
     * [I'm a boy]
-        ~ kat_gender = gender.male
+        ~ kat_gender = male
         ~ kat_name = "Kato"
     * [I'm a girl]
-        ~ kat_gender = gender.female
+        ~ kat_gender = female
         ~ kat_name = "Kate"
 - Please take care of little {kat_name}. {kat_gender==male:He|She} is a very smart and curious one year old <>
 {kat_gender==male:boy|girs}, but also one of {kat_gender==male:his|her} kind in the world...

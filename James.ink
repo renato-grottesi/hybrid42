@@ -1,5 +1,5 @@
 === james ===
-Sunday 25th of September 2018
+Tuesday 25th of September 2018
 You wake up in a comfortable bed, with little memory if how you went from the car to the bed. You leave the bedroom and find James typing on a laptop while eating a sandwich.
 "You surely sleep a lot!", he points out. "Breakfast is in the fridge. I guess you like milk?".
     * [I love milk!]
@@ -219,11 +219,49 @@ You don't like apples, but eating one a day keeps the doctor away, so why not ha
     * [Help James]
         There must be something you can do to help James. You quickly turn off the lights in the kitchen ready to use your night vision to your advantage when they come in. However the two men that run down the stairs to find you took the main door to go outside. You are about to go upstairs, when you receive a call from from James' smartwatch. You take it and you see that he is held by a man holding a shotgun. James looks straight at the camera and silently says"run".
     * [Run outside]
-        ->
     -  You go out from the back door that you used before and start running away from the house as fast as you can.
     -> escape
 = escape
-Soon enough you manage run far enough to be safe. But feel very miserable for putting James in trouble and abandon him. 
+Soon enough you manage run far enough to be safe, but you feel very miserable for putting James in trouble and abandon him. 
 You wonder where you are.
-
-->end
+    * [Try Celestial Navigation]
+        You look at the sky and you manage to locate the north star. The starry sky is very relaxing. You calm down and you remember that you have a phone with GPS.
+    * [Check your Phone]
+-You extract the phone from your pocket an open the maps application.
+->find_options
+VAR found_bookmarks = false
+= find_options
+    * [Look for food]
+        Although you ate enough food, you check for possible places where you can get some food: the closest diners and shops are on the two nearer towns.
+        ->find_options
+    * [Look for home]
+        Home is quite far and you guess that HyGen is probably surveiling your parents closely.
+        ->find_options
+    * {found_bookmarks} [Look for transport]
+        You check the best way to reach HyGen's headquarters and you find that there is a train station on the next town that is connected to a town not too far from the base.
+        ->find_options
+    * [Check bookmarks]
+        ~ found_bookmarks = true
+        James has setup some bookmars in the maps application. You quickly find the two you are looking for: "Mom's home" and "HyGen".
+        ->find_options
+    * ->
+- The walk to the train station takes you only 2 hours. It's already half past eleven and the shops are closed.
+VAR has_coin=false
+->entrance_loop
+=entrance_loop
+    * [Check timetable]
+        From the timetable you see that the first train will stop at six am. "Great..." you mumble in disappointment.
+    * [Check phone booth]
+        ~ has_coin = true
+        You find a coin in the phone booth an you put it in your pocket.
+        ->entrance_loop
+    + [Check vending machine]
+        { has_coin:
+            You put the coin in the vending machine and it's enough for a small brick of chocolate milk. You drink it up and you feel refreshed.
+            ~ has_coin = false
+        - else:
+            You have no pocket money with you.
+        }
+        ->entrance_loop
+- You sit on a bench thinking of the crazy day you had.
+->hygen_hq

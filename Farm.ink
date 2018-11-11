@@ -122,7 +122,6 @@ You hear the engine of an unknow car approaching your house and you quickly turn
 You get very suspicious about the situation and you close the door of your bedroom.
 The cars stop by the entrance and you can see two man in suites coming out of the SUV and four soldiers in <>
 camouflage jumping out from the black van.
-LIST inventory = (none), photo, snack, blanket, syringe
 VAR window_open = false
     * [Take a photo]
         You carefully put your phone behind the curtain and get a few photos of the men and their vehicles.
