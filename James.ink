@@ -263,5 +263,17 @@ VAR has_coin=false
             You have no pocket money with you.
         }
         ->entrance_loop
-- You sit on a bench thinking of the crazy day you had.
+- You sit on a bench in the hall, thinking of the crazy day you had. You are worried on what is going to be of your parents and James. You wonder how will you manage to board a train full of people in the morning. You curl yourself, thinking of a good place where to sleep without being discovered. Suddenly, you hear the sound of a train approaching the station. You run outside and hide behind a tree, waiting to see what kind of train it is.
+The train pass trought the station very slowly and you notice it is an animal transportation train.
+    * [Board the animal train]
+        -> animal_train
+    * [Wait for the scheduled morning train] 
+        -> people_train
+= animal_train
+You remember that there is only one train track between this station and your destination: this train must pass through your target. You start running to gain momentum and you jump with all your strength in the gap between two wagons. You secure yourself with your claws in the wooden wagon.
+-> end_station
+= people_train
+You don't want to risk taking an uncharted train.
+-> end_station
+= end_station
 ->hygen_hq
