@@ -270,10 +270,43 @@ The train pass trought the station very slowly and you notice it is an animal tr
     * [Wait for the scheduled morning train] 
         -> people_train
 = animal_train
-You remember that there is only one train track between this station and your destination: this train must pass through your target. You start running to gain momentum and you jump with all your strength in the gap between two wagons. You secure yourself with your claws in the wooden wagon.
--> end_station
+You remember that there is only one train track between this station and your destination: this train must pass through your target. You start running to gain momentum and you jump with all your strength in the gap between two wagons. You secure yourself with your claws in the wooden wagon. It quite cold, so you enter the wagon in front.
+VAR ate_eggs = false
+VAR drunk_milk = false
+-> pigs_wagon
+= pigs_wagon
+[You should have understood it from the smell: the wagon is full of filthy pigs.|You go back to the pig's wagon once more and you want to leave it as soon as possible.|You wonder why keep visiting the pig's wagon...Are you a masochist?|You come to terms with the fact that you like to smells pig's shit.|You are back to the pig's wagon and you love the smell.]
++ [Wagon in front]
+-> chickens_wagon
++ [Wagon behind]
+-> rabbits_wagon
+= chickens_wagon
+When you enter the wagon, you see almost a hundred chickens all deeply sleeping. {ate_eggs==false:You check the cages and you find several eggs that you crack open straight into your mouth, like when you were a little boy and your mother scolded you for not cooking them. You feel nostalgic, but your belly is full.}
+~ate_eggs= true
++ [Wagon in front]
+The next wagon is locked, so you decide to go back to the previous one.
+-> pigs_wagon
++ [Wagon behind]
+-> pigs_wagon
+= rabbits_wagon
+This wagon contains just a few cages with rabbits. {not ate_eggs: You are so hungry that you seriously consider to eat one, but your mother always told you to not eat raw meat, so you don't.} {not drunk_milk: You think that this wagon would be ideal to sleep, but you are quite thirsty.} {ate_eggs && drunk_milk: This wagon is by far the best for sleeping.}
++ [Wagon in front]
+-> pigs_wagon
++ [Wagon behind]
+-> cows_wagon
+* {ate_eggs && drunk_milk} [Sleep]
+You set an event in the phone you got from James to wake you up when you are in proximity of your station, then you curl yourself in the hay and have a nice and restoring sleep. When you wake up, you have time to eat a few more eggs, drink some more milk and then <>
+= cows_wagon
+A wagon full of cows ready to be milked: it's like a cat's paradise! {not drunk_milk: you choose the nicest cow and latch to her until your belly is full of fresh milk}
+~ drunk_milk = true
++ [Wagon in front]
+-> rabbits_wagon
++ [Wagon behind]
+This is the last wagon of the train, so you go back to the rabbit's wagon.
+-> rabbits_wagon
 = people_train
 You don't want to risk taking an uncharted train.
 -> end_station
 = end_station
+you jump off the train in a forest area a little before the station.
 ->hygen_hq
