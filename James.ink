@@ -305,8 +305,35 @@ A wagon full of cows ready to be milked: it's like a cat's paradise! {not drunk_
 This is the last wagon of the train, so you go back to the rabbit's wagon.
 -> rabbits_wagon
 = people_train
-You don't want to risk taking an uncharted train.
--> end_station
+You don't want to risk taking an uncharted train. {inventory? apple: You eat the apple that you stored in your backpack, you |You } drink some water from the fountain and you set an alarm for 5:30.
+You wake up quite rested, you buy a ticket on the self service machine using the  cloned card that James gave you and you wait for the train to arrive. Then you hear it coming.
+* [Disguise]
+    You pull up your hoodie, put up a bandana around your mouth and wear sunglasses. Nobody should suspect you are not fully human; although you look pretty suspicious...
+The very short local train arrives. And you need to choose which wagon to board.
+* [One]
+    The first wagon will be the first to reach the destination, so you board it.
+* [Two]
+    In case the train gets hit in front or back, the middle wagon should be the safer. You are not this paranoid usually, but you are not in a very lucky period, so you prefer to lower any possible risk of failure.
+* [Three]
+    Nobody likes the last wagon, so it would be the safest to avoid human contact.
+- You find an empty area, sit down in the comfortable seat, put an alarm and fall asleep.
+You dream of sleeping in a tree outside, with rabbits jumping on the ground.
+"Ticket please.", a voice wake you up. You hand over your ticket to the trainman that checks it and give it back to you 
+"Are you okay?", he asks.
+* [Play cool]
+    Your disguise is so hip hop, that you not you head and answer: "Yo man, I'm cool."
+    "Okay...", he says with a n uncertain voice.
+* [Play sick]
+    You cough and with a rough deep voice you answer: "I've got a cold. The doctor told me to cover and wear a mask to not infect people."
+    "You shouldn't travel when you are so sick. Let me know if you need anything.", he offers.
+- When the trainman is far enough, you resume your nap and later wake up from your alarm. From the GPS you can see that you are not too far from the train station and the train starts to slow down.
+* [Jump off the running train]
+    You are afraid that some HyGen people may be waiting for you at the station, so you open the window and <>
+    -> end_station
+* [Wait for the station]
+    You keep your seat untill the train comes to a full stop and you check the window. You see a couple of men wearing a mimetics suite and your blood freezes as they board the train in a different wagon. You don't dare to move and the train restarts it's journey. Before it gains too much speed, you open the window and <>
+   -> end_station
 = end_station
-you jump off the train in a forest area a little before the station.
+you jump off the train in a forest area not too far from the station.
+You check your GPS once more to figure out where to go and you start walking towards your target.
 ->hygen_hq
