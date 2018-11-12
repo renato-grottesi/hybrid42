@@ -52,18 +52,6 @@ LIST pwd = (root), documents, downloads, pictures
 VAR saw_scan = false
 -> hack_puzzle
 = hack_puzzle
-    + List Files
-        { pwd:
-            - root:
-                documents, downloads, pictures, settings.conf
-            - documents:
-                report.txt, interview.txt
-            - downloads:
-                not_a_virus.exe, throwboat.apk
-            - pictures:
-                summer.png, scan.png
-        }
-        -> hack_puzzle
     + Change Directory
         ++ Root
             ~ pwd = root
@@ -120,7 +108,7 @@ VAR saw_scan = false
 "This users you gave me has a recent scan of a document with the same watermark as the paper I was found with when I was a baby."
 "So that confirms that you indeed come from an HyGen experiment, but how can it help us with finding them", he asks.
 VAR was_printer_not_paper = true
-    * [The Printer]
+    * [The printer]
         "That means that they have been using the same printer since I was born: maybe they didn't update it too often and it's easy to hack?", you explain.
         "Good idea! Let me check...", he says before starting to type frantically on his laptop. "That was easy! I installed a scanner that will send an email to us for any printed it scanned document."
     * [The paper]
@@ -275,7 +263,7 @@ VAR ate_eggs = false
 VAR drunk_milk = false
 -> pigs_wagon
 = pigs_wagon
-[You should have understood it from the smell: the wagon is full of filthy pigs.|You go back to the pig's wagon once more and you want to leave it as soon as possible.|You wonder why keep visiting the pig's wagon...Are you a masochist?|You come to terms with the fact that you like to smells pig's shit.|You are back to the pig's wagon and you love the smell.]
+{You should have understood it from the smell: the wagon is full of filthy pigs.|You go back to the pig's wagon once more and you want to leave it as soon as possible.|You wonder why keep visiting the pig's wagon...Are you a masochist?|You come to terms with the fact that you like to smells pig's shit.|You are back to the pig's wagon and you love the smell.}
 + [Wagon in front]
 -> chickens_wagon
 + [Wagon behind]
@@ -296,6 +284,7 @@ This wagon contains just a few cages with rabbits. {not ate_eggs: You are so hun
 -> cows_wagon
 * {ate_eggs && drunk_milk} [Sleep]
 You set an event in the phone you got from James to wake you up when you are in proximity of your station, then you curl yourself in the hay and have a nice and restoring sleep. When you wake up, you have time to eat a few more eggs, drink some more milk and then <>
+-> end_station
 = cows_wagon
 A wagon full of cows ready to be milked: it's like a cat's paradise! {not drunk_milk: you choose the nicest cow and latch to her until your belly is full of fresh milk}
 ~ drunk_milk = true
@@ -309,7 +298,7 @@ You don't want to risk taking an uncharted train. {inventory? apple: You eat the
 You wake up quite rested, you buy a ticket on the self service machine using the  cloned card that James gave you and you wait for the train to arrive. Then you hear it coming.
 * [Disguise]
     You pull up your hoodie, put up a bandana around your mouth and wear sunglasses. Nobody should suspect you are not fully human; although you look pretty suspicious...
-The very short local train arrives. And you need to choose which wagon to board.
+- The very short local train arrives. And you need to choose which wagon to board.
 * [One]
     The first wagon will be the first to reach the destination, so you board it.
 * [Two]
