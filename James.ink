@@ -325,4 +325,4 @@ You dream of sleeping in a tree outside, with rabbits jumping on the ground.
 = end_station
 you jump off the train in a forest area not too far from the station.
 You check your GPS once more to figure out where to go and you start walking towards your target.
-->hygen_hq
+->hygen

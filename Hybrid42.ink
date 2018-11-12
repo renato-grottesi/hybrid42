@@ -14,6 +14,8 @@ INCLUDE HyGen.ink
         -> farm_begin
     * James
         -> james
+    * HyGen
+        ->hygen
 -
 
 Sunday 24th of December 2001
