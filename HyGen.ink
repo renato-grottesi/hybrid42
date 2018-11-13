@@ -24,17 +24,29 @@ You check the satellite pictures that James downloaded to your phone and you fin
   ** [Check the fence]
     You get closer to the inner fence and you see the door is watched by two guards, so you go to explore the outside of the building.
   ** [Check building]
-  -- You walk around the building looking for some entrance. You end up in a side where the windows are protected with iron bars.
+  --
+  -
+You walk around the building looking for some entrance. You end up in a side where the windows are protected with iron bars.
+-> jail_outside
 = jail_outside
 * [Peek at the first window]
    You see an empty cell and you really wish not to end up inside it.
-    -> jail_ouside
+    -> jail_outside
 * [Peek at the second window]
-   You see a boy your age sleeping in the bed of a jail cell. You look again in disbelief and you recognize James! 
-   "James!", you call him quietly to get his attention, but nobody's else. "James, look over here!". He looks at the door. "Window!", you guide him. He saws you and his expression changes into a smile that goes from ear to ear.
+    You see a boy your age sleeping in the bed of a jail cell. You look again in disbelief and you recognize James! 
+    "James!", you call him quietly to get his attention, but nobody's else. "James, look over here!". He looks at the door. "Window!", you guide him. He saws you and his expression changes into a smile that goes from ear to ear.
 * [Peek at the third window]
+    You see a cell where a big dog is sleeping on a bed. You don't want to disturb the animal. 
+    -> jail_outside
 * [Keep walking]
-
-  
--
--> end
+    You keep walking around the building until you see the main entrance guarded by soldiers and you decide to turn back to examine the windows on the back.
+    -> jail_outside
+- "How did you manage to get in?", James asks.
+"After they got you I escaped and got a train to reach the bookmark that you left in the phone.", you explain.
+"I couldn't expect less from you! Do you still have the phone that I gave you? I may need it to hack our way out of this base.", he asks and you handle him the phone and charger.
+"Great!", he continues.
+->end
+= park
+->end
+= kitchen
+->end
