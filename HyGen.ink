@@ -14,11 +14,27 @@ You check the satellite pictures that James downloaded to your phone and you fin
     -- You wait for it to be close, then you jump straight in the back, landing gracefully. You immediately cover yourself behind some potato sacks and you manage to get inside the base.
   ** [Jump out the van]
     You wait until the van is in a regional with enough trees and you jump out, running for cover.
-    You check your surroundings and it looks like you are in a park.
-    -> park.
   ** [Wait until the van stops]
-    You keep hiding until the van stops. The man driving the van leaves the vehicle and you run out, running for a cover behind some other sacks of foods. You look around and you carefully enter the door to a deserted kitchen.
-    -> kitchen
+    You keep hiding until the van stops inside. The man driving the van leaves the vehicle and you jump out, running for a cover behind some other sacks of foods. You look around and you think that you are in some food storage room. You hear men talking from the outside the big garage door, so you patiently wait until it's safe to come out.
+   *** [Check the garage door]
+       You go towards the garage door from where the van drove in and from the window you can see some people walking by. You realize that opening the garage door would make too much noise, so you try the other door.
+   *** [Check the inside door]
+   --- you open the inside door and you end up in a deserted kitchen.
+   You carefully walk towards the window and you see that it leads to a nice park with no people around.
+   *** [Jump out]
+     You don't want to waste any time and you <>
+   *** [Check the fridge]
+     Since you are infiltrating a secret base, why not steal some food from them? You open the fridge and find all kinds of food.
+      **** [Ham]
+        You eat some ham <>
+      **** [Cheese]
+        You eat some cheese <>
+      **** [Milk]
+        You drink some milk <>
+      ---- and you put the remaining in your backpack.
+      Then you <>
+   --- open the window and jump outside.
+  -- You check your surroundings and it looks like you are in a nice garden. The is only one big building and the perimeter wall is behind you.
 * [Look for an alternative entrance]
     You keep circling the perimeter wall of the gigantic complex until you notice a big tree from inside that faces a tree from the outside in a way that you may perhaps jump from one to the others. You decide to try the jump. Climbing the outside tree is child play for you. You then walk the protruding branch while it starts bending and jump towards the inside tree. Your jump is a bit tooolchain short, but your claws help you get a grip and you manage to climb down the tree. You are in a fenced area with a big bricks building.
   ** [Check the fence]
@@ -44,9 +60,15 @@ You walk around the building looking for some entrance. You end up in a side whe
 - "How did you manage to get in?", James asks.
 "After they got you I escaped and got a train to reach the bookmark that you left in the phone.", you explain.
 "I couldn't expect less from you! Do you still have the phone that I gave you? I may need it to hack our way out of this base.", he asks and you handle him the phone and charger.
-"Great!", he continues.
-->end
-= park
-->end
-= kitchen
+"Great!", he continues: "I saw a lot of strange shapes walking around. I think there are other hybrids like you, {kat_name}!. Photos won't be enough to prove it. Can you convince some the other hybrids to join our cause and escape with us?"
+* [I can try]
+   "I can try to find someone to join our cause, but I haven't met any other hybrids yet.", you confess.
+- James detaches a piece that was hanging from the phone jack if the phone and hands it to you: "Take this with you. It's a gps tracker that will show me your position in the map so that I can distract guards and open doors for you."
+"That's amazing!", you say.
+"Now go and find people to join us!"
+You walk towards the guarded fence, the guards start running inside the building and the fence open.
+You go out and you hide behind a bush. You can read a sign with directions:
+* Headquarters
+* School
+* Hospital
 ->end
