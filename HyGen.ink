@@ -67,9 +67,37 @@ You walk around the building looking for some entrance. You end up in a side whe
 "That's amazing!", you say.
 "Now go and find people to join us!"
 You walk towards the guarded fence, the guards start running inside the building and the fence open.
-You go out and you hide behind a bush. You can read a sign with directions:
+You go out and hide behind a bush. <>
+-> fork
+= fork
+VAR found_ally = false
+You can read a sign with directions:
 * Headquarters
+    {
+    found_ally:
+        As you approach the entrance to the head quarters, the guards start running inside and the door unlocks for you: James did it again!
+        -> head_quarters
+    - else:
+        You still haven't managed to find any ally to join your cause.
+        -> fork
+    }
 * School
+    -> school
 * Hospital
--
+    -> hospital
+= school
+You walk towards the school area if the base and you find something amazing: hundreds of human/animal hybrids playing in the the school yard. None of them wear clothes, so you ubdress yourself, store the clothes in the backpack that you hide behind a bush and you approach them casually.
+* [Talk with a dog/human]
+    "Hi...", you timidly open the conversation.
+    "What a brave sphinx! Come talking to a penghou after what you did to us..."
+* [Talk with a cat/human]
+
+* [Talk with a bull/human]
+
+* [Talk to a bird/human]
+    "Hello...", you start 
+    "Hi sphinx. What favour can you possibly need from a harpy?", she stays rolling her eyes.
+    "I just wanted to make a new friend"
+
+
 ->end
