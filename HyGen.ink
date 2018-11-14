@@ -71,4 +71,5 @@ You go out and you hide behind a bush. You can read a sign with directions:
 * Headquarters
 * School
 * Hospital
+-
 ->end
