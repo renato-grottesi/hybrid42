@@ -7,6 +7,8 @@ LIST inventory = (none), photo, snack, blanket, syringe, apple, scissors, cheese
 INCLUDE Farm.ink
 INCLUDE James.ink
 INCLUDE HyGen.ink
+INCLUDE School.ink
+
 
 === intro ===
     * Begin
