@@ -26,7 +26,7 @@ You walk towards the school area if the base and you find something amazing: hun
         *** [Can we remove them?]
             "Did they ever remove your tracker?", you ask.
             "I got it replaced when I was growing up, but since them it has always been on my neck. Maybe they took it off when I was in the hospital, but I was heavily sedated because of my fever, so I'm not sure..."
-        ---
+        --- You realize that there must be a tool in the hospital to remove implants, but you have no idea how it looks like or how to get it.
     --
 * [Talk with a cat/human]
     "Hi!", you say slightly too excited to see someone that looks like you for the first  time in your life.
@@ -93,3 +93,33 @@ You walk towards the school area if the base and you find something amazing: hun
     "I just wanted to make a new friend"
     "So that your new friend can get you some fresh eggs for breakfast? No thanks.", she says and walks away from you.
 - ->meet_students
+The bell rings and all the students start walking back to the classrooms. You hide in a bush and go back to wear your clothes and backpack.
+-> school_puzzle
+= school_puzzle
+* [Check gym]
+   You enter the empty gym. There is a basketball play area, a boxing ring some ropes coming down the roof and some balls in the floor.
+    ** [Check the baskets]
+        The basketball field looks quite new and everything is in a good state 
+    ** Check the ring]
+        The wrestling ring is a but worn out, but still functional.
+    ** [Check the ropes]
+        All the ropes hanging from the roof look solid enough to be climbed even by a minotaur, however you can't stop thinking on what would happen if a minotaur falls from the top...
+    ** {Inventory? rope} [Sabotage]
+        You suddenly realize that the best way to get a GPS implant is by stealing the equipment from the hospital and the only way to see how equipment looks and work is to send someone to the hospital.
+You climb up the bug rope, you wrap the smaller rope from your backpack around the big one and you pull from each end of the smaller rope alternatively. The small rope manages to cut through the big one enough before breaking. You carey climb down the big rope and hide behind some chairs for the gym class to start.
+        ->climbing_fall
+* [Check classrooms]
+    You carefully walk in the hall to the classrooms and read the timetable: the gym class will start next.
+* [Check park]
+    You look around the park for something useful to remove the GPS trackers.
+    **[Chewed chewing gum]
+        As in every park, even here in the middle of nowhere, someone had to spit a gum to the floor...
+    **[Food remainings]
+        Maybe you can feel some spoiled food to your enemies, but then it's better to let it rotten a bit more.
+    **[Short broken rope]
+        ~inventory+=rope
+        You store the rope in you backpack.
+
+* [Exit school]
+
+= climbing_fall
