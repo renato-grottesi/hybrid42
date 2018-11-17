@@ -2,7 +2,7 @@
 
 LIST kat_gender = (male), female
 VAR kat_name = "Kato"
-LIST inventory = (none), photo, snack, blanket, syringe, apple, scissors, cheese
+LIST inventory = (none), photo, snack, blanket, syringe, apple, scissors, cheese, rope
 
 INCLUDE Farm.ink
 INCLUDE James.ink

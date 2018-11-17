@@ -100,14 +100,15 @@ The bell rings and all the students start walking back to the classrooms. You hi
    You enter the empty gym. There is a basketball play area, a boxing ring some ropes coming down the roof and some balls in the floor.
     ** [Check the baskets]
         The basketball field looks quite new and everything is in a good state 
-    ** Check the ring]
+    ** [Check the ring]
         The wrestling ring is a but worn out, but still functional.
     ** [Check the ropes]
         All the ropes hanging from the roof look solid enough to be climbed even by a minotaur, however you can't stop thinking on what would happen if a minotaur falls from the top...
-    ** {Inventory? rope} [Sabotage]
+    ** {inventory?rope} [Sabotage]
         You suddenly realize that the best way to get a GPS implant is by stealing the equipment from the hospital and the only way to see how equipment looks and work is to send someone to the hospital.
-You climb up the bug rope, you wrap the smaller rope from your backpack around the big one and you pull from each end of the smaller rope alternatively. The small rope manages to cut through the big one enough before breaking. You carey climb down the big rope and hide behind some chairs for the gym class to start.
+        You climb up the bug rope, you wrap the smaller rope from your backpack around the big one and you pull from each end of the smaller rope alternatively. The small rope manages to cut through the big one enough before breaking. You carey climb down the big rope and hide behind some chairs for the gym class to start.
         ->climbing_fall
+    --
 * [Check classrooms]
     You carefully walk in the hall to the classrooms and read the timetable: the gym class will start next.
 * [Check park]
@@ -119,7 +120,9 @@ You climb up the bug rope, you wrap the smaller rope from your backpack around t
     **[Short broken rope]
         ~inventory+=rope
         You store the rope in you backpack.
-
+    -- 
 * [Exit school]
-
+- -> school_puzzle
 = climbing_fall
+
+TODO
