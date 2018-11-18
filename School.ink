@@ -124,5 +124,13 @@ The bell rings and all the students start walking back to the classrooms. You hi
 * [Exit school]
 - -> school_puzzle
 = climbing_fall
+When you hear the bell ringing, you quickly run outside and check the gym from the window. The human teacher divides the students into groups and assigns them to different activities, but you are only interested in the rope climbing group. A sphinx climbs the sabotaged  rope up and down safely. Then another sphinx  does the same. Finally the teacher asks a minotaur to climb: as expected, when he reaches half way up, the rope breaks and get falls down, breaking a leg.
+You run to the near hospital, ready to study what is going to happen to the poor minotaur.
+
+-> hospital.minotaur
+=== hospital
+= minotaur
+
+
 
 TODO
