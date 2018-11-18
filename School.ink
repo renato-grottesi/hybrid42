@@ -127,68 +127,6 @@ The bell rings and all the students start walking back to the classrooms. You hi
 When you hear the bell ringing, you quickly run outside and check the gym from the window. The human teacher divides the students into groups and assigns them to different activities, but you are only interested in the rope climbing group. A sphinx climbs the sabotaged  rope up and down safely. Then another sphinx  does the same. Finally the teacher asks a minotaur to climb: as expected, when he reaches half way up, the rope breaks and get falls down, breaking a leg.
 You run to the near hospital, ready to study what is going to happen to the poor minotaur.
 
--> hospital.minotaur
-=== hospital
-= minotaur
-* [Enter the hospital]
-    You walk around the hospital building untill you find an open backdoor. Inside you see an empty kitchen. 
-    VAR dressed = false
-    -- (kitchen)
-    ** [Check lockers]
-        You take a look inside the lockers and you find chef clothes and a sickness mask: you wear everything above your clothes and you store the backpack somewhere safe.
-    ++ [Check main door]
-        {
-        - dressed:
-            You confidently exit the kitchen and walk down the corridor.
-        - else
-            You peek outside the door and you see some people. They would not understand why you are walking freely in the hallway.
-            -> kitchen
-        }
-    -- You hear the main door opening and four humans are carrying an heavy minotaur in a stretcher. Since there aren't too many people around, you decide to follow. As they approach a restricted area, they go to enter the secret code, but the door opens before they enter it. "Damnit James! Be careful!", you think. After some concern, they forget about it and carry on.
-You follow them in the restricted area and you see them entering a room labeled "minotaur emergency". Around you, there are three more emergency rooms.
-    VAR seen_gps_tool = false
-    VAR from_sphinx = false
-    -- (emergencies)
-    ** [Minotaur]
-        You peek from the window in the door and you see a nurse taking off the ring from the nose if the sedated minotaur using a special device that she later stores in a shelf marked with a number four.
-        ~ seen_gps_tool = true
-        -> emergencies
-    ** [Harpy]
-        -> from the door's window you see a harpy sleeping in a bed, so you decide to skip this room.
-    ++ [Penghou]
-        Nobody is inside the room. The tool to remove the GPS trackers must be on the shelves<>
-        {
-        - seen_gps_tool:
-            .
-        - else:
-            , but you don't know how it looks like. -> emergencies
-        }
-    ++ [Sphinx]
-        Nobody is inside the room. The tool to remove the GPS trackers must be on the shelves<>
-        {
-        - seen_gps_tool:
-            ~ from_sphinx = true
-            .
-        - else:
-            , but you don't know how it looks like. -> emergencies
-        }
-    -- (open_shelf)
-    ** [Shelf 1]
-        You check the first shelf and it's full of different medical tools that you don't recognize.
-        -> open_shelf
-    ** [Shelf 2]
-        Nothing interesting in the second shelf beside a pair of scissors that you store in your pocket.
-        ~ inventory+=scissors
-        -> open_shelf
-    ** [Shelf 3]
-        You recognize the tool they used to remove the GPS implant from the bull. This is slightly different, but it makes sense since it's fir a different breed of hybrids.
-    ** [Shelf 4]
-        There shelf is full of filled syringes. You take one from a box labeled "narcotics"
-        ~ inventory+=syringe
-        -> open_shelf
-    --
-* [Spy from outside]
-
 
 
 TODO
