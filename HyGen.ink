@@ -86,8 +86,6 @@ You can read a sign with directions:
 * Hospital
     -> hospital
 
-->head_quarters
-=head_quarters
 ->hospital
 -> hospital.minotaur
 VAR from_sphinx = false
@@ -178,4 +176,48 @@ You follow them in the restricted area and you see them entering a room labeled 
 - When you exit the room, you hear someone walking upstairs and you escape back to the tree outside.
 You feel like you risked enough, so you exit the hospital area and return to the fork.
 At least you managed to get the the GPS tracker remover for the {from_sphinx:sphinx|penghou}.
+
+
+
+
+->head_quarters
+===head_quarters
+You and {companion} approach the head quarters entrance. You expect the gate to open at any time, but it stay closed and the guards keep focusing on the road.
+"What are we waiting for?", {companion} asks.
+*[James to hack]
+    "My friend James should hack into the system and open the gates for us...", you explain.
+*[Something is wrong]
+    "Something is wrong... My friend should have let us in by now...", you answer.
+- "I known a way in from a hole in the fence covered by that bush.", {companion} says pointing her finger at a section of the fence close to the perimeter wall.
+* [Wait]
+    "Let's wait a bit more for my friend.", you propose.
+     After a good half an hour, you come to terms that something must be wrong and you accept {companion}'s suggestion.
+* [Let's go]
+   Worried about James, you decide to try the alternative entrance.
+- You both sneak in the headquarters park from the hole.
+"Wait here, {companion}: I'll go to check on James from the window of his cell."
+As you approach the window, you have a bad feeling...
+- (inspect_cell)
+* [Check roof]
+    You suspiciously look at the roof, but there is no movement.
+* [Check floor]
+    You check the floor for traps and you notice a small USB key that you pick up.
+* [Check window]
+    When you look inside the cell from the window, you realize that it's empty.
+- {->inspect_cell|->inspect_cell|}
+You return to {companion}, when a net falls from the sky and traps you to the ground.
+* [Throw USB key]
+    You throw the USB key in the direction of {companion}, hoping that she will manage to use it.
+
+TODO maybe use the scissors to cut the net?
+
+Some guards come to get you and seeing them armed, you decide to surrender peacefully. You raise your hands, they handcuff you and you let them walk you inside. They sit you in a room alone, strapped to the chair.
+
+(office)
+* [Look at the desk]
+    The desk looks old, but it's shiny and smells like oil. Over the leeather cover, lays an old school typewriter and some folders. Not seeing any computer, makes you feel even more anxious.
+
+- {->office}
+
+
 ->end
