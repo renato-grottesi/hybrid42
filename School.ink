@@ -1,4 +1,4 @@
-= school
+=== school
 You walk towards the school area if the base and you find something amazing: hundreds of human/animal hybrids playing in the the school yard. None of them wear clothes, so you ubdress yourself, store the clothes in the backpack that you hide behind a bush and you approach them casually.
 ->meet_students
 = meet_students
@@ -10,7 +10,7 @@ You walk towards the school area if the base and you find something amazing: hun
     "I'm terribly sorry for their behavior...", you apologize. "Can I make it up for what happened to you in any way?", you suggest.
     The penghou scratches his head thinking and he proposes: "You sphinxes are so much better than us at climbing trees... Would you mind returning my frisbee from that branch?", and he points at a tree.
     "Of course!", you answer. You climb the tree without any problem and return the toy to his owner.
-    He takes the frisbee and admits: "I guess you aren't all the same, after all... My name is Jack."
+    He takes the frisbee and admits: "I guess you aren't all the same, after all... My name is Luna."
     You shake his hand: "I'm {kat_name}, nice to meet you."
     ** [Play?]
         "Do you want to play with the frisbee? I'm not too good, but I may a fast learner.", you offer. You spend the next ten minutes passing the disk.
@@ -127,6 +127,40 @@ The bell rings and all the students start walking back to the classrooms. You hi
 When you hear the bell ringing, you quickly run outside and check the gym from the window. The human teacher divides the students into groups and assigns them to different activities, but you are only interested in the rope climbing group. A sphinx climbs the sabotaged  rope up and down safely. Then another sphinx  does the same. Finally the teacher asks a minotaur to climb: as expected, when he reaches half way up, the rope breaks and get falls down, breaking a leg.
 You run to the near hospital, ready to study what is going to happen to the poor minotaur.
 
-
-
-TODO
+= gps_removal
+You are back to the school area and you can see the students hanging around in the park.
+* [Talk to Felicia]
+    "Hi Felicia!"
+    "{kat_name}... Did you find a GPS tracker remover yet?", she asks.
+    {
+    - from_sphinx:
+        "Yes, here it is!", and you show her the tool.
+    - else:
+        "Some humans got in my way before I could find it, but I know how it looks like.", you explain.
+        "Oh... I guess I'll have to stay here forever then...", she cries.
+        "Don't worry, I'll find a way to get you out!"
+     }
+* [Talk with Luna]
+    "Hi Luna!"
+    "I'm Tylker, you dumb. Luna is over there."
+    "Oh, I'm terribly sorry...", you apologize and start walking towards your friend.
+    "Luna?"
+    "Oh, hey {kat_name}. How is your quest for finding a GPS tracker remover?", he asks.
+    {
+        - from_sphinx:
+            "Not too well... I was in the hospital and I found where they store the removers, but a human got in my way and I had to run.", you explain.
+            "Too bad! Let me know if you find it."
+        - else:
+            "I got the remover, come with me."
+    }
+VAR companion = Luna
+{ from_sphinx: ~companion=Felicia}
+- You walk with {companion} behind a bush and you use the tool to remove the GPS implant. A new light sparkles in her eyes.
+"What is the plan now?", she asks.
+VAR is_dark = false
+* [Rescue James now]
+    You head towards the fork, then you continue to the headquarters.
+* [Wait for darkness]
+    ~ is_dark = true
+    {companion} invites you to her room, where you have some food. After a couple of hours it's dark enough to go to the headquarters.
+-> headquarters
