@@ -126,7 +126,7 @@ The bell rings and all the students start walking back to the classrooms. You hi
 = climbing_fall
 When you hear the bell ringing, you quickly run outside and check the gym from the window. The human teacher divides the students into groups and assigns them to different activities, but you are only interested in the rope climbing group. A sphinx climbs the sabotaged  rope up and down safely. Then another sphinx  does the same. Finally the teacher asks a minotaur to climb: as expected, when he reaches half way up, the rope breaks and get falls down, breaking a leg.
 You run to the near hospital, ready to study what is going to happen to the poor minotaur.
-
+-> gps_removal
 = gps_removal
 You are back to the school area and you can see the students hanging around in the park.
 * [Talk to Felicia]
@@ -153,8 +153,11 @@ You are back to the school area and you can see the students hanging around in t
         - else:
             "I got the remover, come with me."
     }
-VAR companion = Luna
-{ from_sphinx: ~companion=Felicia}
+VAR companion = "Luna"
+{ 
+-from_sphinx: 
+~companion="Felicia"
+}
 - You walk with {companion} behind a bush and you use the tool to remove the GPS implant. A new light sparkles in her eyes.
 "What is the plan now?", she asks.
 VAR is_dark = false
@@ -163,4 +166,5 @@ VAR is_dark = false
 * [Wait for darkness]
     ~ is_dark = true
     {companion} invites you to her room, where you have some food. After a couple of hours it's dark enough to go to the headquarters.
--> headquarters
+-
+-> head_quarters

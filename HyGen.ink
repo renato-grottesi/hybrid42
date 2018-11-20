@@ -213,7 +213,7 @@ TODO maybe use the scissors to cut the net?
 
 Some guards come to get you and seeing them armed, you decide to surrender peacefully. You raise your hands, they handcuff you and you let them walk you inside. They sit you in a room alone, strapped to the chair. The curtains are drawn an the only source of light is a dim lamp on a bookshelf.
 
-(office)
+- (office)
 * [Look at the desk]
     The desk looks old, but it's shiny and smells like wood oil. Over the leeather cover, lays an old school typewriter and some folders. Not seeing any computer, makes you feel even more anxious.
     -> office
@@ -224,7 +224,7 @@ Some guards come to get you and seeing them armed, you decide to surrender peace
     Tell wall to your left has some very old oil paintings portraying some men that you can't recognize.
     -> office
 * -> 
-The door on your back to opens and an old man walks past you and sit in the desk. Wearing a {is_night:fancy nightgown|elegant suite}, he adjusts his glasses and speaks to you.
+- The door on your back to opens and an old man walks past you and sit in the desk. Wearing a {is_dark:fancy nightgown|elegant suite}, he adjusts his glasses and speaks to you.
 "You must be Hybrid 42".
 * [Stay silent]
 * [Who are you?]
@@ -238,7 +238,7 @@ The door on your back to opens and an old man walks past you and sit in the desk
 "Please, let me explain the whole story to you."
 * [Listen]
     "Around thirty years ago, we got permission from the government to investigate the possibility of creating hybrids between humans and animals to adapt the human species to different conditions of life. It took us more than twenty years and forty-one failures to manage our first creation with human intelligence and hybrid body. That was you, Hybrid 42, or {kat_name} as you have been named by Alicia."
-    -- (hygen_questuons)
+    -- (hygen_questions)
     ** [Alicia]
         "Who is Alicia?", you ask.
         "She was the anthropologist assigned to nurse and study your growth. She got over attached to you and one night she stole you and run away. We never found her, but at least we found you."
