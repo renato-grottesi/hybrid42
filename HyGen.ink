@@ -252,7 +252,48 @@ Some guards come to get you and seeing them armed, you decide to surrender peace
     "I am not interested in hearing any lie you plan to tell me! So shut the fuck up!", you answer in deep anger.
 - "What have you done to James?", you start asking when the lights go off and the handcuffs on your wrists click open. You just got your answer straight from James himself.
 
-Thanks to your feline vision, you see that doctor Schwartzstein is trying to get something from the drawer on his desk.
+VAR remaining_soldiers = 4 
 
+Thanks to your feline vision, you see that doctor Schwartzstein is trying to get something from the drawer on his desk.
+* [Run]
+    You quickly reach the door and run down the corridor. You hear the doctor shouting for help and quickly the guards respond.
+* {inventory?syringe} [Attack]
+    You take a syringe from your backpack and inject the doctor before he can pull his hand out of the drawer. When he faints, you see in his palm a red flashing button and you realize that summoned the soldiers. You run outside the door as fast as you can.
+- The footsteps from the guards get louder from the back of the corridor and you run in the opposite direction. The corridor ends up in a staircase.
+* [Run upstairs]
+    You run upstairs and you notice a branch very close to the window. You jump out and hide in the foliage of the tree.
+* [Run downstairs]
+    You run downstairs and you see a soldier guarding an open door for intruders coming from outside. You don't hesitate and you charge him from his back pushing him to the ground and leaving him incapacitated. You run around the corner, where you see a big leafy tree that you climb and use as a temporary hideout.
+    ~ remaining_sokdiers-=1
+- From the top of the tree, you see three soldiers running on the ground. They stop a few meters away and start talking.
+"It's too dark to find Hybrid 42 outside without the night vision goggles. Smith, go get three pairs. Madison, go check Doctor Schwartzstein. I'll patrol the perimeter of the building and we'll meet here in exactly five minutes.", says one of the men, getting a unison "Roger" from the other two.
+
+* [Hide]
+    You don't want to risk getting exposed and you patiently wait on top of the tree for the soldier to go away. As he starts to patrol, you see two dark figures sneaking in his back. The guard seems to notice them as well.
+    ** [Distract the guard]
+        You grab a bird nest from the tree and you throw it at the guard. He gets distracted and the two dark figures attack him from behind, overpowering him and leaving him unconscious on the floor. You climb down to meet them.
+    ** [Hide]
+        You feel like a coward. The fear is overwhelming you. You look as the soldiers prepares to turn and attack the two, when one of them is a throws an object in a parable that ends a few steps in from of the soldier. The guard gets distracted looking in front and one of the pursuers jump towards the men and leaves him incapacitated on the ground. "Amazing job!", says a familiar voice. You focus your eyes and recognize James!
+    --
+* [Attack]
+    You wait for the soldier to be alone, you calculate your best chances and you silently jump from the tree, elegantly landing with your legs on the shoulders of the guard that falls face forward to the grassy ground. You are pretty sure that you felt his bones cracking on the impact. You hear some footsteps behind you and you prepare yourself to attack, when they call you.
+
+- "{kat_name}!", they exclaim together when you touch ground.
+"James! {companion}! You are safe!", you answer while hugging them both.
+~remaining_soldiers-=1
+- (reunion)
+* [How did you meet]
+    "How did you two meet?", you curiously ask.
+    "{companion} found the USB key with the virus that I dropped outside my cell and was bright enough to plug it straight into a machine in the server's room. That took down all electronic systems and allow me to escape the room where they kept me.", James explains.
+    "When I saw a young guy with red hair and a worried expression, I understood that he must have been your friend, so I helped him hide.", {companion} continues.
+* [What is the plan]
+    "What should we do now?", you ask.
+    "Apparently we got lucky: besides the fifty hybrids, there are only four teachers, two doctors, two genitors and four armed guards. I cut all the communication systems, so they can't ask for reinforcement. If we manage to put down the other three guards, we won.", James explains proud if himself.
+{
+    - remaining_soldiers<3:
+        "Actually I put one down while escaping from the building...", you say nonchalantly.
+        "Amazing! We are already fifty percent done!", James exclaims.
+}
+- "Let's find the remaining soldiers then!", you propose.
 
 ->end
