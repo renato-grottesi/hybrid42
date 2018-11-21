@@ -331,5 +331,24 @@ You go inside the HyGen headquarters building.
 * [Invite the press]
     You choose: "Let's call the press now, it would be too difficult to convince all the others to talk to the press."
     "You are right, HyGen brainwashed us daily and some of us felt for it.", {companion} agrees.
--
+- You have a nice deserved sleep and you wake up the next morning to find out at least ten different TV channels and newspapers outside the door if the head quarters, all interviewing different hybrids that curiously came out to check the press, now that James opened every gate in the base, besides the cells.
+You go out and a journalist approaches you.
+"Hi, I'm April from channel seven. Can I ask you some questions?"
+* [No] 
+    You are too tired and politely refuse.
+* [Yes]
+    "Sure"
+    "What are you going to do now that the world knows about your existence?", she asks.
+     ** [Normal life]
+         "I hope that I can have a normal life among humans.", you answer.
+     ** [Advocate awareness]
+         "I think that I will try to advocate awareness of hybrids to make people more sensible about our rights.", you answer.
+     -- "Thank you!"
+- You walk towards James that is just sitting in a bench, enjoying the show.
+"Should we go back home now?", you ask.
+"Sure, do you want a lift on an helicopter?", he proposes.
+"Sure, eheh!", you joke.
+Two hours later you land at your parents farm and hug them again.
+
+The End.
 ->end
