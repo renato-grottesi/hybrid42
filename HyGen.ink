@@ -266,7 +266,7 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
     You run downstairs and you see a soldier guarding an open door for intruders coming from outside. You don't hesitate and you charge him from his back pushing him to the ground and leaving him incapacitated. You run around the corner, where you see a big leafy tree that you climb and use as a temporary hideout.
     ~ remaining_soldiers-=1
 - From the top of the tree, you see three soldiers running on the ground. They stop a few meters away and start talking.
-"It's too dark to find Hybrid 42 outside without the night vision goggles. Smith, go get three pairs. Madison, go check Doctor Schwartzstein. I'll patrol the perimeter of the building and we'll meet here in exactly five minutes.", says one of the men, getting a unison "Roger" from the other two.
+"It's too dark to find Hybrid 42 outside without the thermal vision goggles. Smith, go get three pairs. Madison, go check Doctor Schwartzstein. I'll patrol the perimeter of the building and we'll meet here in exactly five minutes.", says one of the men, getting a unison "Roger" from the other two.
 
 * [Hide]
     You don't want to risk getting exposed and you patiently wait on top of the tree for the soldier to go away. As he starts to patrol, you see two dark figures sneaking in his back. The guard seems to notice them as well.
@@ -294,6 +294,42 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
         "Actually I put one down while escaping from the building...", you say nonchalantly.
         "Amazing! We are already fifty percent done!", James exclaims.
 }
-- "Let's find the remaining soldiers then!", you propose.
-
+- "Let's find the remaining soldiers then!", you agree.
+- "While I was hiding on the tree I heard that one soldier was going upstairs to check on doctor Schwartzstein, while another was going downstairs to get some thermal vision goggles."
+"Great! Let's head to the entrance!", James exclaims.
+* {remaining_soldiers>2:} [Check the entrance]
+    A guard is standing in the entrance, rifle in his hands.
+    "How should we take this one down?", {companion} asks.
+    ** [I distract, you attack]
+        "I can run as fast as I can towards that tree and while the guards comes to get, you can attack him from behind.", you propose.
+        Your friends agree. You summon all your courage and start running. The guard spots you and he doesn't hesitate to shoot you with a tranquillizer, but he only hits the backpack that you used as a shield. Pissed off, he leaves the main entrance and runs at you. Before he notices, { companion} jumps over him, take a tranquillizer recharge from his belt and puts him to sleep.
+    ** [You distract, I attack]
+        "Try to distract him somehow and I'll attack him from behind.", you propose.
+        "Leave the distraction to me.", James proposes, then he starts walking nonchalantly while fidgeting with two leaves. He puts the leaves close to his mouth and starts playing a tune with the improvised harmonica. The guard first looks at him perplexed, then asks: "Hey! Aren't you supposed to be in jail?!". "I'm having my ten minutes of air, officer, sir!", James reply with so much confidence that it felt like mokery. The passed off guard starts to walk towards James, when you jump over his back, throwing him face down to the floor, then you snap some syringe from his belt and inject him with what you later understand was a tranquillizer.
+    --
+~ remaining_soldiers -= 1
+-
+You go inside the HyGen headquarters building.
+"How do we handle the remaining two guards?", {companion} asks.
+* [Set a trap]
+    "I think that it's best if we we wait here and set a trap for when they come out.", you propose, then continue: "Let all grab a tranquillizer syringe from the soldier outside the door and hide in different places.".
+    You hide on top of a bookshelf, James behind a chair and {companion} behind a door.
+    The first soldier comes out from downstairs, holding three thermal goggles. He sees you standing on top of the bookshelf. You smile at his concerned expression while {companion} puts him to sleep.
+    A few minutes later, the other soldier walks downstairs carrying a n unconscious doctor Schwartzstein in his arms. You jump at his back with the syringe in your hand and he quickly falls asleep.
+* [Split]
+    "I'll go downstairs where I have an advance from my feline vision, while you two go upstairs.", you propose.
+    "OK, but if you have any problem scream and we'll come down!", James says concerned. You nod and start walking downstairs.
+    In the darkness of the basement you notice a moving light coming from a room. You swiftly walk past the door and flatten yourself to the wall. Seconds later the guards comes out and you easily steal the torch from his hand, turn it off and use it to hit him in the head.
+    With the guard down, you head upstairs to regroup with your friends that are already waiting for you. James asks: "We put the soldier down, how did it go downstairs?". "It was almost too easy!", you brag.
+- You take some time to get all four guards and the doctor inside a cell, then you decide together the way forward.
+"What should we do now?", you ask to James.
+"We can either let all hybrids free, or we can call invite the press to visit this place. Which one do you think is the best?"
+* [Free the hybrids]
+    You choose: "Let's free every hybrid first and let them decide how to live their lives. Then we can invite the press here and I can tell them my experience."
+    "I'll stay with you.", {companion} adds.
+    You stop by the hospital to take all the gps tracker removers and head towards the dorms where you free all hybrids and explain them that they are free to leave, or they can stay and talk with the press in the morning. After consulting each other, all the hybrids agree to stay together and remain in the headquarters.
+* [Invite the press]
+    You choose: "Let's call the press now, it would be too difficult to convince all the others to talk to the press."
+    "You are right, HyGen brainwashed us daily and some of us felt for it.", {companion} agrees.
+-
 ->end
