@@ -264,7 +264,7 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
     You run upstairs and you notice a branch very close to the window. You jump out and hide in the foliage of the tree.
 * [Run downstairs]
     You run downstairs and you see a soldier guarding an open door for intruders coming from outside. You don't hesitate and you charge him from his back pushing him to the ground and leaving him incapacitated. You run around the corner, where you see a big leafy tree that you climb and use as a temporary hideout.
-    ~ remaining_sokdiers-=1
+    ~ remaining_soldiers-=1
 - From the top of the tree, you see three soldiers running on the ground. They stop a few meters away and start talking.
 "It's too dark to find Hybrid 42 outside without the night vision goggles. Smith, go get three pairs. Madison, go check Doctor Schwartzstein. I'll patrol the perimeter of the building and we'll meet here in exactly five minutes.", says one of the men, getting a unison "Roger" from the other two.
 
