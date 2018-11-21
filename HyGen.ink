@@ -297,7 +297,7 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
 - "Let's find the remaining soldiers then!", you agree.
 - "While I was hiding on the tree I heard that one soldier was going upstairs to check on doctor Schwartzstein, while another was going downstairs to get some thermal vision goggles."
 "Great! Let's head to the entrance!", James exclaims.
-* {remaining_soldiers>2:} [Check the entrance]
+* {remaining_soldiers>2} [Check the entrance]
     A guard is standing in the entrance, rifle in his hands.
     "How should we take this one down?", {companion} asks.
     ** [I distract, you attack]
