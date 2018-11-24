@@ -11,6 +11,7 @@ INCLUDE School.ink
 
 
 === intro ===
+Cheats:
     * Begin
     * Farm
         -> farm_begin
@@ -20,7 +21,7 @@ INCLUDE School.ink
         ->hygen
 -
 
-Sunday 24th of December 2001
+Sunday 24th of December 2001 # MUSIC: beginning.mp3
 
 You wake up inside your basket baby cradle.
 Everything is dark and your face is cold.

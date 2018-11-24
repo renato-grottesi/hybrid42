@@ -89,8 +89,7 @@
                 }
                 
                 // MUSIC - changes the currently playing music
-                if( splitTag && splitTag.property == "MUSIC" ) {
-                    removeAll("audio");
+                else if( splitTag && splitTag.property == "MUSIC" ) {
                     var audioElement = document.createElement('audio');
                     audioElement.id = 'audio-player';
                     audioElement.controls = '';
@@ -99,6 +98,8 @@
                     audioElement.src = splitTag.val;
                     audioElement.type = 'audio/mpeg';
                     storyContainer.appendChild(audioElement);
+                    showAfter(delay, audioElement);
+                    delay += 200.0;
                 }
                 
             }
