@@ -1,4 +1,4 @@
-(function(storyContent) {
+(function (storyContent) {
 
     // Create ink story from the content using inkjs
     var story = new inkjs.Story(storyContent);
@@ -87,6 +87,20 @@
                         return;
                     }
                 }
+                
+                // MUSIC - changes the currently playing music
+                if( splitTag && splitTag.property == "MUSIC" ) {
+                    removeAll("audio");
+                    var audioElement = document.createElement('audio');
+                    audioElement.id = 'audio-player';
+                    audioElement.controls = '';
+                    audioElement.autoplay = 'autoplay';
+                    audioElement.loop = 'loops';
+                    audioElement.src = splitTag.val;
+                    audioElement.type = 'audio/mpeg';
+                    storyContainer.appendChild(audioElement);
+                }
+                
             }
 
             // Create paragraph element (initially hidden)
