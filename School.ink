@@ -1,5 +1,5 @@
 === school
-You walk towards the school area if the base and you find something amazing: hundreds of human/animal hybrids playing in the the school yard. None of them wear clothes, so you ubdress yourself, store the clothes in the backpack that you hide behind a bush and you approach them casually.
+You walk towards the school area if the base and you find something amazing: hundreds of human/animal hybrids playing in the the school yard. None of them wear clothes, so you undress yourself, store the clothes in the backpack that you hide behind a bush and you approach them casually.
 ->meet_students
 = meet_students
 * [Talk with a dog/human]
@@ -89,7 +89,7 @@ You walk towards the school area if the base and you find something amazing: hun
     "Any time!", he cheerfully concludes.
 * [Talk to a bird/human]
     "Hello...", you start 
-    "Hi sphinx. What favour can you possibly need from a harpy?", she says rolling her eyes.
+    "Hi sphinx. What favor can you possibly need from a harpy?", she says rolling her eyes.
     "I just wanted to make a new friend"
     "So that your new friend can get you some fresh eggs for breakfast? No thanks.", she says and walks away from you.
 - ->meet_students
@@ -106,7 +106,7 @@ The bell rings and all the students start walking back to the classrooms. You hi
         All the ropes hanging from the roof look solid enough to be climbed even by a minotaur, however you can't stop thinking on what would happen if a minotaur falls from the top...
     ** {inventory?rope} [Sabotage]
         You suddenly realize that the best way to get a GPS implant is by stealing the equipment from the hospital and the only way to see how equipment looks and work is to send someone to the hospital.
-        You climb up the bug rope, you wrap the smaller rope from your backpack around the big one and you pull from each end of the smaller rope alternatively. The small rope manages to cut through the big one enough before breaking. You carey climb down the big rope and hide behind some chairs for the gym class to start.
+        You climb up the bug rope, you wrap the smaller rope from your backpack around the big one and you pull from each end of the smaller rope alternatively. The small rope manages to cut through the big one enough before breaking. You carry climb down the big rope and hide behind some chairs for the gym class to start.
         ->climbing_fall
     --
 * [Check classrooms]
@@ -115,7 +115,7 @@ The bell rings and all the students start walking back to the classrooms. You hi
     You look around the park for something useful to remove the GPS trackers.
     **[Chewed chewing gum]
         As in every park, even here in the middle of nowhere, someone had to spit a gum to the floor...
-    **[Food remainings]
+    **[Food remaining]
         Maybe you can feel some spoiled food to your enemies, but then it's better to let it rotten a bit more.
     **[Short broken rope]
         ~inventory+=rope
@@ -153,14 +153,12 @@ You are back to the school area and you can see the students hanging around in t
         - else:
             "I got the remover, come with me."
     }
-VAR companion = "Luna"
 { 
 -from_sphinx: 
 ~companion="Felicia"
 }
 - You walk with {companion} behind a bush and you use the tool to remove the GPS implant. A new light sparkles in her eyes.
 "What is the plan now?", she asks.
-VAR is_dark = false
 * [Rescue James now]
     You head towards the fork, then you continue to the headquarters.
 * [Wait for darkness]

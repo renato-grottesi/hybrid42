@@ -36,7 +36,7 @@ You check the satellite pictures that James downloaded to your phone and you fin
    --- open the window and jump outside.
   -- You check your surroundings and it looks like you are in a nice garden. The is only one big building and the perimeter wall is behind you.
 * [Look for an alternative entrance]
-    You keep circling the perimeter wall of the gigantic complex until you notice a big tree from inside that faces a tree from the outside in a way that you may perhaps jump from one to the others. You decide to try the jump. Climbing the outside tree is child play for you. You then walk the protruding branch while it starts bending and jump towards the inside tree. Your jump is a bit tooolchain short, but your claws help you get a grip and you manage to climb down the tree. You are in a fenced area with a big bricks building.
+    You keep circling the perimeter wall of the gigantic complex until you notice a big tree from inside that faces a tree from the outside in a way that you may perhaps jump from one to the others. You decide to try the jump. Climbing the outside tree is child play for you. You then walk the protruding branch while it starts bending and jump towards the inside tree. Your jump is a bit too short, but your claws help you get a grip and you manage to climb down the tree. You are in a fenced area with a big bricks building.
   ** [Check the fence]
     You get closer to the inner fence and you see the door is watched by two guards, so you go to explore the outside of the building.
   ** [Check building]
@@ -63,14 +63,13 @@ You walk around the building looking for some entrance. You end up in a side whe
 "Great!", he continues: "I saw a lot of strange shapes walking around. I think there are other hybrids like you, {kat_name}!. Photos won't be enough to prove it. Can you convince some the other hybrids to join our cause and escape with us?"
 * [I can try]
    "I can try to find someone to join our cause, but I haven't met any other hybrids yet.", you confess.
-- James detaches a piece that was hanging from the phone jack if the phone and hands it to you: "Take this with you. It's a gps tracker that will show me your position in the map so that I can distract guards and open doors for you."
+- James detaches a piece that was hanging from the phone jack if the phone and hands it to you: "Take this with you. It's a GPS tracker that will show me your position in the map so that I can distract guards and open doors for you."
 "That's amazing!", you say.
 "Now go and find people to join us!"
 You walk towards the guarded fence, the guards start running inside the building and the fence open.
 You go out and hide behind a bush. <>
 -> fork
 = fork
-VAR found_ally = false
 You can read a sign with directions:
 * Headquarters
     {
@@ -88,11 +87,10 @@ You can read a sign with directions:
 
 ->hospital
 -> hospital.minotaur
-VAR from_sphinx = false
 === hospital
 = minotaur
 * [Enter the hospital]
-    You walk around the hospital building untill you find an open backdoor. Inside you see an empty kitchen. 
+    You walk around the hospital building until you find an open backdoor. Inside you see an empty kitchen. 
     VAR dressed = false
     -- (kitchen)
     ** [Check lockers]
@@ -105,7 +103,7 @@ VAR from_sphinx = false
             You peek outside the door and you see some people. They would not understand why you are walking freely in the hallway.
             -> kitchen
         }
-    -- You hear the main door opening and four humans are carrying an heavy minotaur in a stretcher. Since there aren't too many people around, you decide to follow. As they approach a restricted area, they go to enter the secret code, but the door opens before they enter it. "Damnit James! Be careful!", you think. After some concern, they forget about it and carry on.
+    -- You hear the main door opening and four humans are carrying an heavy minotaur in a stretcher. Since there aren't too many people around, you decide to follow. As they approach a restricted area, they go to enter the secret code, but the door opens before they enter it. "Dammit James! Be careful!", you think. After some concern, they forget about it and carry on.
 You follow them in the restricted area and you see them entering a room labeled "minotaur emergency". Around you, there are three more emergency rooms.
     VAR seen_gps_tool = false
     -- (emergencies)
@@ -208,17 +206,20 @@ As you approach the window, you have a bad feeling...
 You return to {companion}, when a net falls from the sky and traps you to the ground.
 * [Throw USB key]
     You throw the USB key in the direction of {companion}, hoping that she will manage to use it.
+    Some guards come to get you 
+* {inventory?scissors}[Cut net]
+    You use the scissors that you stored in your backpack to cut a hole in the net and run towards {companion}.
+    "Figure out how to use this key: it is from my friend and it must be important! They saw me, so I'll try to distract them and maybe find James.", you explain to her. She nods and you run away.
+    You run towards the entrance, but a guards sees you. You don't even have time to try and run away: two more guards close you in the back 
 
-TODO maybe use the scissors to cut the net?
-
-Some guards come to get you and seeing them armed, you decide to surrender peacefully. You raise your hands, they handcuff you and you let them walk you inside. They sit you in a room alone, strapped to the chair. The curtains are drawn an the only source of light is a dim lamp on a bookshelf.
+- <> and seeing them armed, you decide to surrender peacefully. You raise your hands, they handcuff you and you let them walk you inside. They sit you in a room alone, strapped to the chair. The curtains are drawn an the only source of light is a dim lamp on a bookshelf.
 
 - (office)
 * [Look at the desk]
-    The desk looks old, but it's shiny and smells like wood oil. Over the leeather cover, lays an old school typewriter and some folders. Not seeing any computer, makes you feel even more anxious.
+    The desk looks old, but it's shiny and smells like wood oil. Over the leather cover, lays an old school typewriter and some folders. Not seeing any computer, makes you feel even more anxious.
     -> office
 * [Look at the bookshelves]
-    The wall on the right is covered with ok'd books. You recognize some titles like Mary Shelley's Frankenstein or Charles Darwin's "On the origin of species".
+    The wall on the right is covered with old books. You recognize some titles like Mary Shelley's Frankenstein or Charles Darwin's "On the origin of species".
     -> office
 * [Look at paintings]
     Tell wall to your left has some very old oil paintings portraying some men that you can't recognize.
@@ -288,7 +289,7 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
     "When I saw a young guy with red hair and a worried expression, I understood that he must have been your friend, so I helped him hide.", {companion} continues.
 * [What is the plan]
     "What should we do now?", you ask.
-    "Apparently we got lucky: besides the fifty hybrids, there are only four teachers, two doctors, two genitors and four armed guards. I cut all the communication systems, so they can't ask for reinforcement. If we manage to put down the other three guards, we won.", James explains proud if himself.
+    "Apparently we got lucky: besides the fifty hybrids, there are only four teachers, two doctors, two janitors and four armed guards. I cut all the communication systems, so they can't ask for reinforcement. If we manage to put down the other three guards, we won.", James explains proud if himself.
 {
     - remaining_soldiers<3:
         "Actually I put one down while escaping from the building...", you say nonchalantly.
@@ -302,17 +303,17 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
     "How should we take this one down?", {companion} asks.
     ** [I distract, you attack]
         "I can run as fast as I can towards that tree and while the guards comes to get, you can attack him from behind.", you propose.
-        Your friends agree. You summon all your courage and start running. The guard spots you and he doesn't hesitate to shoot you with a tranquillizer, but he only hits the backpack that you used as a shield. Pissed off, he leaves the main entrance and runs at you. Before he notices, { companion} jumps over him, take a tranquillizer recharge from his belt and puts him to sleep.
+        Your friends agree. You summon all your courage and start running. The guard spots you and he doesn't hesitate to shoot you with a tranquilizer, but he only hits the backpack that you used as a shield. Pissed off, he leaves the main entrance and runs at you. Before he notices, { companion} jumps over him, take a tranquilizer recharge from his belt and puts him to sleep.
     ** [You distract, I attack]
         "Try to distract him somehow and I'll attack him from behind.", you propose.
-        "Leave the distraction to me.", James proposes, then he starts walking nonchalantly while fidgeting with two leaves. He puts the leaves close to his mouth and starts playing a tune with the improvised harmonica. The guard first looks at him perplexed, then asks: "Hey! Aren't you supposed to be in jail?!". "I'm having my ten minutes of air, officer, sir!", James reply with so much confidence that it felt like mokery. The passed off guard starts to walk towards James, when you jump over his back, throwing him face down to the floor, then you snap some syringe from his belt and inject him with what you later understand was a tranquillizer.
+        "Leave the distraction to me.", James proposes, then he starts walking nonchalantly while fidgeting with two leaves. He puts the leaves close to his mouth and starts playing a tune with the improvised harmonica. The guard first looks at him perplexed, then asks: "Hey! Aren't you supposed to be in jail?!". "I'm having my ten minutes of air, officer, sir!", James reply with so much confidence that it felt like mockery. The passed off guard starts to walk towards James, when you jump over his back, throwing him face down to the floor, then you snap some syringe from his belt and inject him with what you later understand was a tranquilizer.
     --
 ~ remaining_soldiers -= 1
 -
 You go inside the HyGen headquarters building.
 "How do we handle the remaining two guards?", {companion} asks.
 * [Set a trap]
-    "I think that it's best if we we wait here and set a trap for when they come out.", you propose, then continue: "Let all grab a tranquillizer syringe from the soldier outside the door and hide in different places.".
+    "I think that it's best if we we wait here and set a trap for when they come out.", you propose, then continue: "Let all grab a tranquilizer syringe from the soldier outside the door and hide in different places.".
     You hide on top of a bookshelf, James behind a chair and {companion} behind a door.
     The first soldier comes out from downstairs, holding three thermal goggles. He sees you standing on top of the bookshelf. You smile at his concerned expression while {companion} puts him to sleep.
     A few minutes later, the other soldier walks downstairs carrying a n unconscious doctor Schwartzstein in his arms. You jump at his back with the syringe in your hand and he quickly falls asleep.

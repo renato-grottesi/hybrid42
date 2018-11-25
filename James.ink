@@ -1,9 +1,9 @@
 === james ===
 Tuesday 25th of September 2018
-You wake up in a comfortable bed, with little memory if how you went from the car to the bed. You leave the bedroom and find James typing on a laptop while eating a sandwich.
+You wake up in a comfortable bed, with little memory of how you went from the car to the bed. You leave the bedroom and find James typing on a laptop while eating a sandwich.
 "You surely sleep a lot!", he points out. "Breakfast is in the fridge. I guess you like milk?".
     * [I love milk!]
-        "Thanks! I love milk!", you exclaim enthusiastic and grab a bottle from the fridge.
+        "Thanks! I love milk!", you exclaim enthusiastically and grab a bottle from the fridge.
     * [Do you have any meat?]
         "I like milk, but I had very little food yesterday. Do you have any meat?", you ask as politely as you can.
         "Sure! I should have some bacon. Anyway, check the fridge and eat what you want!"
@@ -73,12 +73,12 @@ VAR saw_scan = false
         - root:
             + settings.conf
                 settings for user cjohnson
-                room = saphire3.4
+                room = sapphire3.4
                 printer = tiger3
             -> hack_puzzle
         - documents:
             + report.txt
-                Investements in online advertisements are going to be reduced by 10% next year due to fall in click rates.
+                Investments in online advertisements are going to be reduced by 10% next year due to fall in click rates.
                 Fundings will be diverted into charity events and government lobbying.
             -> hack_puzzle
             + interview.txt
@@ -90,7 +90,7 @@ VAR saw_scan = false
                 You are not opening that one...
             -> hack_puzzle
             + throwboat.apk
-                You know that game! It's one of your favourite.
+                You know that game! It's one of your favorite.
             -> hack_puzzle
         - pictures:
             + summer.jpeg
@@ -118,9 +118,9 @@ VAR was_printer_not_paper = true
 - While waiting for the results, you check your new phone and play some games, trying to remember what a normal life felt like, but then you miss your parents.
 * [About my parents]
 - "James... Can you check on my parents, please?", you ask your best friend.
-"Of course! Those intruders stole your laptop (not before I installed a tracking program), but I still have a connectionl at your TV's camera and microphone.", he answers.
+"Of course! Those intruders stole your laptop (not before I installed a tracking program), but I still have a connection at your TV's camera and microphone.", he answers.
 "I didn't even know that my TV had a camera...", you confess.
-"Eheh, many TV come with cameras for videoconference, but not many people use them. Anyway, here's a streaming.", he shows you.
+"Eheh, many TV come with cameras for video conference, but not many people use them. Anyway, here's a streaming.", he shows you.
 You see your parents sitting on the couch, your father hugging your mother while she rests her hand on his shoulder. You can't see them too clearly, but you know that your mother is crying.
 They are safe, at least.
 
@@ -175,7 +175,7 @@ You arrive at his mother's at twelve past nine in the evening.
     You put the hoodie over your head and take a nap.
     As soon as you start dreaming about being a ninja in Naruto's would, you wake up from the vibrating phone. You pull it out of your pocket and see a call from an unknown number. 
     * [Pick up]
-        You pick up the call and you see a video from a strange perspective of James in the floor being held face down by a man in a suite. You realize that James must have connected a fast heart pulse to trigger an emergency calll from his smartwatch. You can hear audio as well and the man in black suite commands: "We got the target alone. Send some men to search for the Hybrid 42 outside."
+        You pick up the call and you see a video from a strange perspective of James in the floor being held face down by a man in a suite. You realize that James must have connected a fast heart pulse to trigger an emergency call from his smartwatch. You can hear audio as well and the man in black suite commands: "We got the target alone. Send some men to search for the Hybrid 42 outside."
     Your blood freezes. They got James and you are alone in a car that you can't drive.
     * [Ignore]
         You swipe left the call, assuming it's nothing important.
@@ -187,7 +187,7 @@ You arrive at his mother's at twelve past nine in the evening.
     "Can I join you: I don't feel comfortable waiting alone in a stolen car with my face..."
     "Sure, but nobody ever comes in this area. This street just connects two small towns and there is nothing interesting around here."
     You both walk towards the house and enter from the back door that goes straight into the kitchen.
-    Your feline hearing notices some muffled movements and whisperings.
+    Your feline hearing notices some muffled movements and whispering.
     "James, is your mother home?", you whisper.
     "No, she was planning to go out on a date since she thinks I'm with dad. Why are you asking?"
     "Because I hear some noise from inside the house.", you explain.
@@ -223,14 +223,14 @@ VAR found_bookmarks = false
         Although you ate enough food, you check for possible places where you can get some food: the closest diners and shops are on the two nearer towns.
         ->find_options
     * [Look for home]
-        Home is quite far and you guess that HyGen is probably surveiling your parents closely.
+        Home is quite far and you guess that HyGen is probably surveilling your parents closely.
         ->find_options
     * {found_bookmarks} [Look for transport]
         You check the best way to reach HyGen's headquarters and you find that there is a train station on the next town that is connected to a town not too far from the base.
         ->find_options
     * [Check bookmarks]
         ~ found_bookmarks = true
-        James has setup some bookmars in the maps application. You quickly find the two you are looking for: "Mom's home" and "HyGen".
+        James has setup some bookmarks in the maps application. You quickly find the two you are looking for: "Mom's home" and "HyGen".
         ->find_options
     * ->
 - The walk to the train station takes you only 2 hours. It's already half past eleven and the shops are closed.
@@ -252,7 +252,7 @@ VAR has_coin=false
         }
         ->entrance_loop
 - You sit on a bench in the hall, thinking of the crazy day you had. You are worried on what is going to be of your parents and James. You wonder how will you manage to board a train full of people in the morning. You curl yourself, thinking of a good place where to sleep without being discovered. Suddenly, you hear the sound of a train approaching the station. You run outside and hide behind a tree, waiting to see what kind of train it is.
-The train pass trought the station very slowly and you notice it is an animal transportation train.
+The train pass trough the station very slowly and you notice it is an animal transportation train.
     * [Board the animal train]
         -> animal_train
     * [Wait for the scheduled morning train] 
@@ -297,7 +297,7 @@ This is the last wagon of the train, so you go back to the rabbit's wagon.
 You don't want to risk taking an uncharted train. {inventory? apple: You eat the apple that you stored in your backpack, you |You } drink some water from the fountain and you set an alarm for 5:30.
 You wake up quite rested, you buy a ticket on the self service machine using the  cloned card that James gave you and you wait for the train to arrive. Then you hear it coming.
 * [Disguise]
-    You pull up your hoodie, put up a bandana around your mouth and wear sunglasses. Nobody should suspect you are not fully human; although you look pretty suspicious...
+    You pull up your hoodie, put up a bandanna around your mouth and wear sunglasses. Nobody should suspect you are not fully human; although you look pretty suspicious...
 - The very short local train arrives. And you need to choose which wagon to board.
 * [One]
     The first wagon will be the first to reach the destination, so you board it.
@@ -320,7 +320,7 @@ You dream of sleeping in a tree outside, with rabbits jumping on the ground.
     You are afraid that some HyGen people may be waiting for you at the station, so you open the window and <>
     -> end_station
 * [Wait for the station]
-    You keep your seat untill the train comes to a full stop and you check the window. You see a couple of men wearing a mimetics suite and your blood freezes as they board the train in a different wagon. You don't dare to move and the train restarts it's journey. Before it gains too much speed, you open the window and <>
+    You keep your seat until the train comes to a full stop and you check the window. You see a couple of men wearing a mimetic suite and your blood freezes as they board the train in a different wagon. You don't dare to move and the train restarts it's journey. Before it gains too much speed, you open the window and <>
    -> end_station
 = end_station
 you jump off the train in a forest area not too far from the station.
