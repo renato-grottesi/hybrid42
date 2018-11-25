@@ -37,7 +37,7 @@ Everything is dark and your face is cold.
 A middle age couple gasps when they see you and bring you inside the house.
 "Oh my God! Someone abandoned a baby at our door!" cries the woman and brings you to the couch <>
 to unwrap you from the blanket.
-"There is a note pinned to the side of the cradle." says the man and starts to read it.
+"A note is pinned to the side of the cradle." says the man and starts to read it.
     * [I'm a boy]
         ~ kat_gender = male
         ~ kat_name = "Kato"
@@ -46,7 +46,7 @@ to unwrap you from the blanket.
         ~ kat_name = "Kate"
 - Please take care of little {kat_name}. {kat_gender==male:He|She} is a very smart and curious one year old <>
 {kat_gender==male:boy|girl}, but also one of {kat_gender==male:his|her} kind in the world...
-I beg you, raise {kat_gender==male:him|her} like one of your own, but don't expose {kat_gender==male:him|her} <>
+I beg you, raise {kat_gender==male:him|her} as your own child, but don't expose {kat_gender==male:him|her} <>
 to the rest of the world until {kat_gender==male:he|she} comes of age.
 "Ahhhh!" scream the woman when she sees your face.
     * [Smile]
