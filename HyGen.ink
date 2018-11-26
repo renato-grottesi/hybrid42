@@ -332,7 +332,9 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
         "Try to distract him somehow and I'll attack him from behind.", you propose.
         "Leave the distraction to me.", James proposes, then he starts walking nonchalantly while fidgeting with two leaves. He puts the leaves close to his mouth and starts playing a tune with the improvised harmonica. The guard first looks at him perplexed, then asks: "Hey! Aren't you supposed to be in jail?!". "I'm having my ten minutes of air, officer, sir!", James replies with enough confidence that it felt like mockery. The passed off guard starts to walk towards James, when you jump over his back, throwing him face down to the floor, then you snap some syringe from his belt and inject him with what you later understand was a tranquilizer.
     --
-~ remaining_soldiers -= 1
+
+    ~ remaining_soldiers -= 1
+* ->
 -
 You go inside the HyGen headquarters building.
 "How do we handle the remaining two guards?", {companion} asks.
