@@ -7,6 +7,8 @@ VAR companion = "Luna"
 VAR is_dark = false
 VAR found_ally = false
 VAR from_sphinx = false
+VAR met_students = false
+VAR minotaur_felt = false
 
 INCLUDE Farm.ink
 INCLUDE James.ink
@@ -16,16 +18,16 @@ INCLUDE School.ink
 === intro ===
 
 - (begin)
-+ [Begin] # CLEAR
-* [Credits]
-    Hybrid 42 is a text adventure made for the GameOff2018 game jam.
-    Story, programming and music by:
-    Renato Grottesi
-    Open Source tools used:
-    Inkle for the story.
-    Vim for html and javascript
-    LLMS to compose music.
-    -> begin
+    + [Begin] # CLEAR
+    * [Credits]
+        Hybrid 42 is a text adventure made for the GameOff2018 game jam.
+        Story, programming and music by: Renato Grottesi
+        Open Source tools used:
+        Inkle for the story.
+        Vim for html and javascript
+        LLMS to compose music.
+        diction and aspell for grammar and spelling.
+        -> begin
 -
 Sunday 24th of December 2001 # MUSIC: beginning.mp3
 

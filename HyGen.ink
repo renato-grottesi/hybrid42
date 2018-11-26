@@ -71,7 +71,7 @@ You go out and hide behind a bush. <>
 -> fork
 = fork
 You can read a sign with directions:
-* Headquarters
++ Headquarters
     {
     - found_ally:
         As you approach the entrance to the head quarters, the guards start running inside and the door unlocks for you: James did it again!
@@ -80,10 +80,24 @@ You can read a sign with directions:
         You still haven't managed to find any ally to join your cause.
         -> fork
     }
-* School
-    -> school
-* Hospital
-    -> hospital
++ School
+    {
+    - minotaur_felt:
+        Nothing interesting happening in the school. You must find the GPS removers.
+        -> fork
+    - met_students:
+        -> school.school_puzzle
+    - else:
+        -> school
+    }
++ Hospital
+    {
+    - minotaur_felt:
+        -> hospital
+    - else:
+        You check the hospital from the outside, but nothing captures your attention, so you head back to the fork.
+        -> fork
+    }
 
 ->hospital
 -> hospital.minotaur

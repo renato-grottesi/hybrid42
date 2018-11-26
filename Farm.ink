@@ -213,6 +213,7 @@ VAR has_passwd = false
         }
         At the bottom of your backpack you find the water bottle and suddenly realize why it was heavier than usual.
         ~ drunk_water = true
+        { not ate_food || not has_passwd : -> gas_station}
     * [Check the garbage bin]
         {
         - ate_food:
@@ -224,6 +225,7 @@ VAR has_passwd = false
             ~ ate_food = true
             ~ has_passwd = true
         }
+        { not drunk_water || not has_passwd : -> gas_station}
     * [Check the toilet]
         You visit the toilet and <>
         {
@@ -236,7 +238,8 @@ VAR has_passwd = false
         You hear someone approaching and you hide yourself in a toilet.
         A middle-aged {kat_gender==male:man|woman} enters the toilet and your sensitive smell is sending pulses of pain to your brain for 5 good minutes...
         When you are sure to be alone, you go out the toilet and you notice that the {kat_gender==male:man|woman} who had a bad dinner left a receipt from the restaurant on the sink. You confirm that the dish responsible for the horror was a taco and you are about to put the ticket down, when you notice that it contains the WiFi password!
-- {drunk_water && ate_food && has_passwd : |  -> gas_station}
+        {  not ate_food : -> gas_station}
+-
 You turn on your phone, insert the password from the receipt and anxiously wait for the waiting animation to complete. You are connected.
 A few notifications from various messaging and email app pop-up.
 -> phone_notifications
@@ -288,9 +291,9 @@ You wait for a response.
 "{kat_name}! You are out there safe!", James finally answers.
 "sorry for hacking in your house, but I was genuinely worried about your silence after what I found out about HyGen and after you mentioned them again.", he apologizes.
 "where are you? should I pick you up?", he asks.
-* [At Mandy's]
-"I'm at some gas station called Mandy's. I can't be too far from home.", you explain.
-"OK, I found it on Google Maps. That's quite a ride from where I live. I can be there in 3 hours. We'll meet at 23:00 sharp behind the car wash building. Now turn off your phone and wait there."
+    * [At Mandy's]
+    "I'm at some gas station called Mandy's. I can't be too far from home.", you explain.
+- "OK, I found it on Google Maps. That's quite a ride from where I live. I can be there in 3 hours. We'll meet at 23:00 sharp behind the car wash building. Now turn off your phone and wait there."
 "thanks...", you simply answer and turn off your phone.
 You spend the next three hours sitting on the back of the restaurant building, {inventory? blanket: covered by the warm blanket that you packed this morning. |under the warm coming from the ventilation system. You are so cold, that you don't mind smelling like a mix of hamburger, french fries and apple pie.}
     * [Check Phone] 
