@@ -107,13 +107,20 @@ You can read a sign with directions:
     You walk around the hospital building until you find an open backdoor. Inside you see an empty kitchen. 
     VAR dressed = false
     -- (kitchen)
-    ** [Check lockers]
-        You take a look inside the lockers and you find chef clothes and a sickness mask: you wear everything above your clothes and you store the backpack somewhere safe.
+    ++ [Check lockers]
+        {
+        - not dressed:
+            You take a look inside the lockers and you find chef clothes and a sickness mask: you wear everything above your clothes and you store the backpack somewhere safe.
+            ~ dressed = true
+        - else:
+            The lockers are empty.
+        }
+        -> kitchen
     ++ [Check main door]
         {
         - dressed:
             You confidently exit the kitchen and walk down the corridor.
-        - else
+        - else:
             You peek outside the door and you see some people. They would not understand why you are walking freely in the hallway.
             -> kitchen
         }
@@ -259,6 +266,7 @@ You return to {companion}, when a net falls from the sky and traps you to the gr
         "What is HyGen and do you have to do with it?", you ask.
         "We are just a government founded company, like many others. I was the lead genetics scientist behind your creation and more than sixty percent of your DNA was cloned from mine."
         -> hygen_questions
+    ** ->
     -- Your brain is processing all the information and you feel a mix of confusion, anger and closure.
 * [Refuse]
     "I am not interested in hearing any lie you plan to tell me! So shut the fuck up!", you answer in deep anger.
@@ -298,17 +306,22 @@ Thanks to your feline vision, you see that doctor Schwartzstein is trying to get
     "How did you two meet?", you curiously ask.
     "{companion} found the USB key with the virus that I dropped outside my cell and was bright enough to plug it straight into a machine in the server's room. That took down all electronic systems and allow me to escape the room where they kept me.", James explains.
     "When I saw a young guy with red hair and a worried expression, I understood that he must have been your friend, so I helped him hide.", {companion} continues.
+    -> reunion
 * [What is the plan]
     "What should we do now?", you ask.
     "Apparently we got lucky: besides the fifty hybrids only four teachers, two doctors, two janitors and four armed guards are in the base right now. I cut all the communication systems, so they can't ask for reinforcement. If we manage to put down the other three guards, we won.", James explains proud if himself.
-{
+    {
     - remaining_soldiers<3:
         "Actually I put one down while escaping from the building...", you say nonchalantly.
         "Amazing! We are already fifty percent done!", James exclaims.
-}
+    }
+    -> reunion
+* ->
+
 - "Let's find the remaining soldiers then!", you agree.
-- "While I was hiding on the tree I heard that a soldier was going upstairs to check doctor Schwartzstein, while another was going downstairs to get some thermal vision goggles."
-"Great! Let's head to the entrance!", James exclaims.
+"While I was hiding on the tree I heard that a soldier was going upstairs to check doctor Schwartzstein, while another was going downstairs to get some thermal vision goggles."
+"Great! Let's head to the entrance!", James exclaims. 
+
 * {remaining_soldiers>2} [Check the entrance]
     A guard is standing in the entrance, rifle in his hands.
     "How should we take this one down?", {companion} asks.
