@@ -1,5 +1,5 @@
 === james ===
-Tuesday 25th of September 2018
+Tuesday 25th of September 2018 # MUSIC: james.mp3
 You wake up in a comfortable bed, with little memory of how you went from the car to the bed. You leave the bedroom and find James typing on a laptop while eating a sandwich.
 "You surely sleep a lot!", he points out. "Breakfast is in the fridge. I guess you like milk?".
     * [I love milk!]
