@@ -90,6 +90,9 @@
                 
                 // MUSIC - changes the currently playing music
                 else if( splitTag && splitTag.property == "MUSIC" ) {
+                    var sounds = document.getElementsByTagName('audio');
+                    for(i=0; i<sounds.length; i++) sounds[i].pause();
+
                     var audioElement = document.createElement('audio');
                     audioElement.id = 'audio-player';
                     audioElement.controls = '';
