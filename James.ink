@@ -15,7 +15,7 @@ You wake up in a comfortable bed, with little memory of how you went from the ca
         "I want to learn as much as I can about this HyGen. I managed to enter their first layer of security, but it's more about managing the facade web site.", he explains.
         "Please be careful with them! They were armed when they visited my house yesterday...", you warn him.
         "I know... However they are doing some quite unethical experiments and I, or even better the whole world, must know the truth. Especially you {kat_name}, don't you want to know where you came from?", he asks.
-        You asked yourself the same many times, but you never have been so sure about the answer as now: "Yes, I do want to know.".
+        You asked yourself the same question many times before, but you had never been so sure about the answer as now: "Yes, I do want to know.".
         James smiles back at you.
         -> morning_chat
     * [Sorry for falling asleep.]
@@ -26,7 +26,7 @@ You wake up in a comfortable bed, with little memory of how you went from the ca
         "Where are your parents? Do you live alone?", you curiosity ask.
         "My parents are divorced and right now each believe I'm spending the day with the other.", James explain.
         "But if they're in their homes, in which home are we?", you ask confused.
-        " We are in the house if some dude that is spending the week in some AirBnB up in the north. I didn't bother driving all the way back, so I found a closer place where to hide. Of course don't open the door if someone knocks!".
+        " We are in the house of some dude that is spending the week in some AirBnB up in the north. I didn't bother driving all the way back, so I found a closer place where to hide. Of course don't open the door if someone knocks!".
         You are astonished at James' hacking skills. "You surely are something when it comes to hacking!", you congratulate him.
         "Eheh", he blushes.
         -> morning_chat
@@ -44,7 +44,7 @@ You wake up in a comfortable bed, with little memory of how you went from the ca
     * [Offer to help]
         "You look very busy: can I try to help you somehow?", you offer.
         "Of course you can! I'll setup up another laptop for you. But first take <>
-- this brand new Android phones set-up with a heavily anonymous virtual private network and with an engine that will automatically connect to any WiFi network in range. It also constantly fake the location on untrusted apps, so you will be safe."
+- this brand new Android phones set-up with a heavily anonymous virtual private network and with an engine that will automatically connect to any WiFi network in range. It also constantly fakes the location on untrusted apps, so you will be safe."
 James picks a laptop from his back and types something, then he gives it to you.
 "Here, this is a laptop with a remote terminal open with one of the HyGen employees that I phished this morning: do your best at finding information and don't worry about being found, since we are behind many layers of bouncing connections.", he smiles with pride.
 "Wow, you surely are something... I'll try my best!"
@@ -66,7 +66,7 @@ VAR saw_scan = false
     + Show Files
         -> filer
     * {saw_scan} [Check backpack]
-        Inside your backpack you find a copy of the letter that was found with you when you were abandoned at your adoptive parents farm. You have been studying the letter for a while before without much results, but now it hits you: it has the same watermark as the scan you found in the documents folder!
+        Inside your backpack you find a copy of the letter that was found with you when you were abandoned at your adoptive parents farm. You have been studying the letter for a while before without much results, but now it hits you: it has the same watermark as the scan you found in the pictures folder!
         -> hack_puzzle_done
 = filer
     { pwd:
@@ -110,7 +110,7 @@ VAR saw_scan = false
 VAR was_printer_not_paper = true
     * [The printer]
         "That means that they have been using the same printer since I was born: maybe they didn't update it too often and it's easy to hack?", you explain.
-        "Good idea! Let me check...", he says before starting to type frantically on his laptop. "That was easy! I installed a scanner that will send an email to us for any printed it scanned document."
+        "Good idea! Let me check...", he says before starting to type frantically on his laptop. "That was easy! I installed a scanner that will send an email to us for any printed or scanned document."
     * [The paper]
         ~ was_printer_not_paper = false
         "That means that they have been using the same paper supplier since I was born.", you explain.
@@ -118,9 +118,9 @@ VAR was_printer_not_paper = true
 - While waiting for the results, you check your new phone and play some games, trying to remember what a normal life felt like, but then you miss your parents.
 * [About my parents]
 - "James... Can you check on my parents, please?", you ask your best friend.
-"Of course! Those intruders stole your laptop (not before I installed a tracking program), but I still have a connection at your TV's camera and microphone.", he answers.
+"Of course! Those intruders stole your laptop before I managed to install a tracking program, but I still have a connection at your TV's camera and microphone.", he answers.
 "I didn't even know that my TV had a camera...", you confess.
-"Eheh, many TV come with cameras for video conference, but not many people use them. Anyway, here's a streaming.", he shows you.
+"Eheh, many TVs come with cameras for video conference, but not many people use them. Anyway, here's a streaming.", he shows you.
 You see your parents sitting on the couch, your father hugging your mother while she rests her hand on his shoulder. You can't see them too clearly, but you know that your mother is crying.
 They are safe, at least.
 
@@ -135,7 +135,7 @@ Suddenly your phones vibrate at the same time.
     "I'll need to manually review those results, it may take a while, but it won't be too difficult.", James says.
 }
 "Do you mind if I take a nap?", you politely ask.
-""No, not at all! Be my guest!", he laughs at the thought thy this isn't even his house.
+"No, not at all! Be my guest!", he laughs at the thought thy this isn't even his house.
 You smile back and go to the bedroom where you fall asleep straight away.
 * [ZzzZZzzZ]
 - You wake up two hours later well tested.
@@ -202,10 +202,10 @@ You arrive at his mother's at twelve past nine in the evening.
     * [Apple]
 You don't like apples, but eating one a day keeps the doctor away, so why not having one in the backpack.
         ~ inventory+=apple
-    - Suddenly you hear a big thump on something big falling upstairs and you focus your hearing. You distinguish a command: "I'll keep this kid silent, you two go outside and get Hybrid 42!"
+    - Suddenly you hear a big thump of something big falling upstairs and you focus your hearing. You distinguish a command: "I'll keep this kid silent, you two go outside and get Hybrid 42!"
     They are running downstairs.
     * [Help James]
-        There must be something you can do to help James. You quickly turn off the lights in the kitchen ready to use your night vision to your advantage when they come in. However the two men that run down the stairs to find you took the main door to go outside. You are about to go upstairs, when you receive a call from from James' smartwatch. You take it and you see that he is held by a man holding a shotgun. James looks straight at the camera and silently says"run".
+        There must be something you can do to help James. You quickly turn off the lights in the kitchen, ready to use your night vision to your advantage when they come in. However the two men that run down the stairs to find you took the main door to go outside. You are about to go upstairs, when you receive a call from from James' smartwatch. You take it and you see that he is held by a man holding a shotgun. James looks straight at the camera and silently says "run".
     * [Run outside]
     -  You go out from the back door that you used before and start running away from the house as fast as you can.
     -> escape
@@ -239,7 +239,7 @@ VAR has_coin=false
 ->entrance_loop
 =entrance_loop
     * [Check timetable]
-        From the timetable you see that the first train will stop at six am. "Great..." you mumble in disappointment.
+        From the timetable you see that the first train will stop at six AM. "Great..." you mumble in disappointment.
     * [Check phone booth]
         ~ has_coin = true
         You find a coin in the phone booth an you put it in your pocket.
@@ -259,7 +259,7 @@ The train pass trough the station very slowly and you notice it is an animal tra
     * [Wait for the scheduled morning train] 
         -> people_train
 = animal_train
-You remember that there is only one train track between this station and your destination: this train must pass through your target. You start running to gain momentum and you jump with all your strength in the gap between two wagons. You secure yourself with your claws in the wooden wagon. It quite cold, so you enter the wagon in front.
+You remember that there is only one train track between this station and your destination: this train must pass through your target. You start running to gain momentum and you jump with all your strength in the gap between two wagons. You secure yourself with your claws in the wooden wagon. It is quite cold, so you enter the wagon in front.
 VAR ate_eggs = false
 VAR drunk_milk = false
 -> pigs_wagon
@@ -284,10 +284,10 @@ This wagon contains just a few cages with rabbits. {not ate_eggs: You are so hun
 + [Wagon behind]
 -> cows_wagon
 * {ate_eggs && drunk_milk} [Sleep]
-You set an event in the phone you got from James to wake you up when you are in proximity of your station, then you curl yourself in the hay and have a nice and restoring sleep. When you wake up, you have time to eat a few more eggs, drink some more milk and then <>
+You set an event in the phone you got from James to wake you up when you are in proximity of your destination, then you curl yourself in the hay and have a nice and restoring sleep. When you wake up, you have time to eat a few more eggs, drink some more milk and then <>
 -> end_station
 = cows_wagon
-A wagon full of cows ready to be milked: it's like a cat's paradise! {not drunk_milk: you choose the nicest cow and latch to her until your belly is full of fresh milk}
+A wagon full of cows ready to be milked: it's like a cat's paradise! {not drunk_milk: You choose the nicest cow and latch to her until your belly is full of fresh milk.}
 ~ drunk_milk = true
 + [Wagon in front]
 -> rabbits_wagon
