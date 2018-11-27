@@ -1,5 +1,5 @@
 === school
-You walk towards the school area if the base and you find something amazing: hundreds of human/animal hybrids playing in the the school yard. None of them wear clothes, so you undress yourself, store the clothes in the backpack that you hide behind a bush and you approach them casually.
+You walk towards the school area of the base and you find something amazing: hundreds of human/animal hybrids playing in the the school yard. None of them wears clothes, so you undress yourself, store the clothes in the backpack that you hide behind a bush and you approach them casually.
 ->meet_students
 = meet_students
 * [Talk with a dog/human]
@@ -37,7 +37,7 @@ You walk towards the school area if the base and you find something amazing: hun
     "Hi!", you say slightly too excited to see someone that looks like you for the first  time in your life.
     "Do I know you?", she asks.
     ** [I'm a transfer student]
-        "No, I'm new here. I was raised in a different HyGen base and sent here to check how if the educational system works better.", you quickly make up.
+        "No, I'm new here. I was raised in a different HyGen base and sent here to check if the educational system works better.", you quickly make up.
     ** [I was sick]
         "I have been sick several years, spending all my time in the hospital, but now I'm good!", you look lie in a goofy way.
     -- "Very interesting...", she answers and then turns away from you to look at the trees.
