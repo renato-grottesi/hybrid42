@@ -36,7 +36,7 @@ Everything is dark and your face is cold.
     * [Cry]
         "Maaa! Miaaaah!"
 - You hear a crackling sound and see some light coming from an opening door.
-A middle age couple gasps when they see you and bring you inside the house.
+A middle-aged couple gasps when they see you and bring you inside the house.
 "Oh my God! Someone abandoned a baby at our door!" cries the woman and brings you to the couch <>
 to unwrap you from the blanket.
 "A note is pinned to the side of the cradle." says the man and starts to read it.
