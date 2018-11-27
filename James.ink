@@ -125,7 +125,7 @@ You see your parents sitting on the couch, your father hugging your mother while
 They are safe, at least.
 
 Suddenly your phones vibrate at the same time.
-* Scanning Results
+* [Scanning Results]
 -
 { was_printer_not_paper:
     Someone scanned a document for the construction of a new building.

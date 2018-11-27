@@ -77,18 +77,18 @@ VAR knows_james = 0
             ~ email_hygen = true
             "Why did I even get in contact with those creeps...?" you ask yourself and delete the email.
     + [Open Google]
-        ++ Study
+        ++ [Study]
             You read about {&music|history|programming|chemistry|mathematics}.
-        ++ Relax
+        ++ [Relax]
             You find some {~funny|weird|interesting} {~videos of|articles about|photos of|blog posts about} <>
             {~cats|dogs|goats|comedians}.
-        ** {email_hygen} Check HyGen
+        ** {email_hygen} [Check HyGen]
             You go back to check the HyGen website and finds something odd about their address. It feels as you heard about it before in a novel or television show.
             ~ knows_hygen = true
     + [Play Minecraft]
-        ++ Play solo
+        ++ [Play offline]
             You play ten minutes alone in Minecraft and get bored...
-        ** Play online
+        ** [Play online]
             You connect to the server and your friend James asks you to have a private chat with him.
             ~ email_james = true
     + {email_james && knows_james <2 } [Chat with James]
@@ -100,7 +100,6 @@ VAR knows_james = 0
             I: was it boring to play without me? ;-p
             James: 2 more didn't show and we ended up canceling the game after 15 minutes...
             I: sorry...
-            ~ knows_james +=1 
         ** [About HyGen]
             I: do you remember that company, HyGen, that I reached about my research on human/animal hybrids?
             James: I do and I did my research on them as well.
@@ -108,7 +107,7 @@ VAR knows_james = 0
             James: the HyGen appears to be cover: their website is actually registered to a company that manages PR for the army...
             James: stay away from those creeps, please.
             I: about that...
-            ~ knows_james +=1 
+            ~ knows_james +=2
         -- 
 - {not knows_hygen:->computer} {knows_james<2:->computer}
 You hear the engine of an unknown car approaching your house and you quickly turn off the computer and run upstairs.
@@ -143,15 +142,15 @@ The phone vibrates.
 - You don't think about it twice, you grab your backpack, run towards the window{window_open: open it wide|, you struggle to open it while you hear the soldiers running upstairs. Eventually you manage to spread it wide} and you jump to the branch of the oak tree.
 "Hey you assholes! What are you doing in my property?" your father screams at the soldiers to distract them.
 He clearly looks your way with a confident look that says "go {kat_gender==male:son|daughter}, I'll handle these intruders".
-    * [run towards the fields]
+    * [Run towards the fields]
         The corn field is the perfect hiding place. You jump from one oak tree to another and eventually you run towards the tall plants.
         You don't know what is going to happen to your parents, but you trust their though skin.
-    * [run toward the orchard]
-        The fruit trees in the orchards are full of leaves. You jump down the oak tree and run towards the apple trees. A soldier spots you and you see your father punching him in the arm to disarm him. You run as fast as you can, but they start shooting at you.
-        ** [keep running straight]
+    * [Run toward the orchard]
+        The fruit trees in the orchards are full of leaves. You jump down the oak tree and run towards the apple. A soldier spot you and you see your father punching him in the arm to disarm him. You run as fast as you can, but they start shooting at you.
+        ** [Keep running straight]
             You keep running through the orchard, while the soldiers shoot at you. A projectile hits your backpack, but doesn't kill you. Eventually you reach the forest on the hills and you are sure that you lost your pursuers.
             ~inventory+=syringe
-        ** [head towards the corn field]
+        ** [Head towards the corn field]
             You change trajectory an enter the corn field, full of tall plants that hide you from your pursuers. Soon you lose them.
 - Feeling safe, you head towards the cave in the middle of the forest where you have been playing since a small child.
 {inventory?syringe:You check your backpack and notice that a syringe is hanging from it. They were shooting narcotics at you. You pick the syringe and save it in your backpack: it may come into use later.}
@@ -270,7 +269,7 @@ VAR can_contact_james = false
 
          A smile appears on your face. At least you can count on James to help you.
         ~ can_contact_james = true
-    * [itch.io]
+    * [Itch.io]
         This week's staff picks:
         Throwboat, Onychophora and Consciousness Beam
     + {can_contact_james}[Contact James]
@@ -324,7 +323,7 @@ You spend the next three hours sitting on the back of the restaurant building, {
         "I'm glad you came as well. Nice to meet you in person, I guess." you smile. "Before I'm coming there let me warn you. 
 - <> You know when I told you that I used Photoshop to create my profile picture and you were all impressed with my skills: I lied"
 "What does that even... Let's go {kat_name}, the earlier we leave this area, the less risks we face."
-[Step towards the lit area]
+* [Step towards the lit area]
 You step towards James and under the neon light, rising your eyes to meet James'. 
 - "What the fuck!", James exclaims surprised. " Why are you wearing a cat mask and why are your eyes shiny?"
     * [Laugh]
