@@ -40,7 +40,7 @@ or talk with strangers online"
     * "Do you need help["?"] collecting eggs from the chickens?", you ask.
         "No thanks. There won't be that many and you should start your home school day."
 - {->talk|}
-You finish your breakfast and go to the room that your parents setup as a home classroom for you when you were six <>
+You finish your breakfast and you go to the room that your parents setup as a home classroom for you when you were six <>
 years old. Since then you've been diligently studying in the small desk, first with the help of your parents <>
 and now by yourself.
 -> study
@@ -65,8 +65,7 @@ VAR knows_james = 0
             is everything fine?
             ~ unread = unread-1
             ~ email_james = true
-            "Dammit! I forgot to join the game yesterday! I should better try to get in touch with James <>
-            in the game chat later." you remember.
+            {knows_james <2 "Dammit! I forgot to join the game yesterday! I should better try to get in touch with James in the game chat later." you remember.}
         ** [Read email from HyGen]
             Dear {kat_gender==male:Mr|Miss} {kat_name},
             we have some information regarding your inquiry on the progress of our research on human/animal hybrids, <>
@@ -83,12 +82,12 @@ VAR knows_james = 0
             You find some {~funny|weird|interesting} {~videos of|articles about|photos of|blog posts about} <>
             {~cats|dogs|goats|comedians}.
         ** {email_hygen} [Check HyGen]
-            You go back to check the HyGen website and finds something odd about their address. It feels as you heard about it before in a novel or television show.
+            You go back to check the HyGen website and finds something odd about their address. It feels as you heard about it before in a novel or a television show.
             ~ knows_hygen = true
     + [Play Minecraft]
         ++ [Play offline]
             You play ten minutes alone in Minecraft and get bored...
-        ** [Play online]
+        ** {knows_james <2 } [Play online]
             You connect to the server and your friend James asks you to have a private chat with him.
             ~ email_james = true
     + {email_james && knows_james <2 } [Chat with James]
@@ -124,7 +123,7 @@ VAR window_open = false
         You carefully put your phone behind the curtain and get a few photos of the men and their vehicles.
         ~ inventory += photo
     * [Open the window]
-        You carefully unlock the window and open it just enough to hear the voices of the men.
+        You carefully unlock the window and you open it just enough to hear the voices of the men.
         ~ window_open = true
     * [Prepare a backpack]
         You get your backpack and fill it with useful items that you may use in case you should escape.
@@ -138,8 +137,8 @@ The phone vibrates.
         An sms from your father just says "run!"
     * [Check your mother]
         You open the door and see your mother held by a men in suite while two soldiers are checking the living room.
-        Everyone's attention focus on you and your mother screams "Run!"
-- You don't think about it twice, you grab your backpack, run towards the window{window_open: open it wide|, you struggle to open it while you hear the soldiers running upstairs. Eventually you manage to spread it wide} and you jump to the branch of the oak tree.
+        Everyone's attention focuses on you and your mother screams "Run!"
+- You don't think about it twice, you grab your backpack, run towards the window{window_open:, open it wide|, but you struggle to open it while you hear the soldiers running upstairs. Eventually you manage to spread it wide} and you jump to the branch of the oak tree.
 "Hey you assholes! What are you doing in my property?" your father screams at the soldiers to distract them.
 He clearly looks your way with a confident look that says "go {kat_gender==male:son|daughter}, I'll handle these intruders".
     * [Run towards the fields]
@@ -152,7 +151,7 @@ He clearly looks your way with a confident look that says "go {kat_gender==male:
             ~inventory+=syringe
         ** [Head towards the corn field]
             You change trajectory an enter the corn field, full of tall plants that hide you from your pursuers. Soon you lose them.
-- Feeling safe, you head towards the cave in the middle of the forest where you have been playing since a small child.
+- Feeling safe, you head towards the cave in the middle of the forest where you have been playing since when you were a small child.
 {inventory?syringe:You check your backpack and notice that a syringe is hanging from it. They were shooting narcotics at you. You pick the syringe and save it in your backpack: it may come into use later.}
 ->options
 =options
@@ -162,13 +161,13 @@ You consider your options:
         The cave is a safe place where they will never find you, but it is quite cold.
         {inventory?blanket:Luckily you remembered to pack a blanket in your backpack and you keep hiding. You hear footsteps outside, but they didn't notice the narrow opening of the cave. You keep waiting until it gets dark outside.|->options}
     * [Look for a warmer shelter]
-        You reluctantly abandon your shelter and start looking for a warmer shelter. Your feline hearing picks the sound of footsteps approaching from downhill. 
+        You reluctantly abandon your shelter and start looking for a warmer place. Your feline hearing picks the sound of footsteps approaching from downhill. 
         ** [Hide in a tree]
-            A big bushy maple tree stands not too far. You reach the trunk in no time and climb up, hiding yourself in the dense foliage. They will never find you up here. After a while you hear the sound of a soldier's boots stumping on the ground below. The soldier stops. You realize that you didn't conceal your footprints. An moment that feels like an eternity passes. You conquer your fear and look down: the soldier is just sitting on the bottom of the tree checking his phone. After a while he stands up and walks away. You keep waiting sitting you your branch for several hours, until you feel safe to climb down.
+            A big bushy maple tree stands not too far. You reach the trunk in no time and you climb it up, hiding yourself in the dense foliage. They will never find you up here. After a while you hear the sound of a soldier's boots stumping on the ground below. The soldier stops. You realize that you didn't conceal your footprints. A moment that feels like an eternity passes. You conquer your fear and look down: the soldier is just sitting on the bottom of the tree checking his phone. After a while he stands up and walks away. You keep waiting sitting on your branch for several hours, until you feel safe to climb down.
         ** [Run uphill]
             You run uphill, away from the soldiers. You have never been in this area.
             *** [Turn back]
-                Something doesn't feel safe. You can't point out what it is, but you trust your instincts and start to carefully walk backwards in the hope that the soldiers took a different paths. But they didn't. They see you and start running after you. Suddenly you hear them shouting and look back to see them surrounded by a pack of wolves. They <>
+                Something doesn't feel safe. You can't point out what it is, but you trust your instincts and you start to carefully walk backwards in the hope that the soldiers took a different paths. But they didn't. They see you and they start running after you. Suddenly you hear them shouting and look back to see them surrounded by a pack of wolves. They <>
                 ~ soldiers_forest = true
             *** [Continue]
                 You ignore your fears and keep walking in the forest. You hear a crackling sound, someone is walking towards you, but it is not the sound of soldier's boots. Then you see them: a pack of six wolves is slowly surrounding you. 
@@ -176,7 +175,8 @@ You consider your options:
                     You run towards the nearest tree and climb to a safe branch. The wolves walk frantically below you. You throw some pine-cones at them, but you're only making them more nervous. Then you hear the sound of soldiers approaching. The wolves do as well. You throw a pine-cone in the soldiers' direction to attract their attention and conceal yourself in the branches higher up the tree. From your hiding place you see the soldiers and wolves preparing to engage in a battle. A wolf haul and the soldiers <>
                 **** [Charge at the wolves]
                     It's time for action. You run towards a wolf and jump high above his head, going back to the path from where you came from. The pack follows you. Suddenly you see the soldiers on your right and you run towards them while they are unprepared to attack you. When they see you it is too late to capture you: they see the wolves as well and they <>
----drop their tranquilizer guns and pick up the shotguns in their belts to defend themselves against the beasts. At least now you know that they weren't planning to kill you. A soldier shoots and kills a wolf. The pack backs up a few steps, but then some hauling from uphill drain the hope of the soldiers that start running away chased by the wolves. You exploit the opening to run back to a safer place{inventory?syringe:, but first you pick up a tranquilizer syringe that the soldiers left behind}.
+                ----
+---drop their tranquilizer guns and pick up the shotguns in their belts to defend themselves against the beasts. At least now you know that they weren't planning to kill you. A soldier shoots and kills a wolf. The pack backs up a few steps, but then some hauling from uphill drains the hope of the soldiers that start running away chased by the wolves. You exploit the opening to run back to a safer place{inventory?syringe:, but first you pick up a tranquilizer syringe that the soldiers left behind}.
                     ~ inventory += syringe
     * [Contact your parents]
         Although it may be comforting to turn on your phone and contact your parents, you realize that those bad people may still be holding them captive and they can setup a trap for you.
@@ -201,7 +201,7 @@ VAR has_passwd = false
         {
         - inventory?snack && not ate_food:
             Luckily, you remembered to pack a snack before leaving home this morning.<>
-            You eat up the whole bag of pork cracklings and feel full of energy.
+            You eat up the whole bag of pork cracklings and you feel full of energy.
             ~ ate_food = true
             ~ inventory-=snack
         - inventory?snack && ate_food:
@@ -210,7 +210,7 @@ VAR has_passwd = false
         -else:
             No food insides...
         }
-        At the bottom of your backpack you find the water bottle and suddenly realize why it was heavier than usual.
+        At the bottom of your backpack you find the water bottle and suddenly you realize why it was heavier than usual.
         ~ drunk_water = true
         { not ate_food || not has_passwd : -> gas_station}
     * [Check the garbage bin]
@@ -235,17 +235,17 @@ VAR has_passwd = false
                 ~ drunk_water = true
         }
         You hear someone approaching and you hide yourself in a toilet.
-        A middle-aged {kat_gender==male:man|woman} enters the toilet and your sensitive smell is sending pulses of pain to your brain for 5 good minutes...
+        A middle-aged {kat_gender==male:man|woman} enters the toilet and your sensitive smell is sending pulses of pain to your brain for five good minutes...
         When you are sure to be alone, you go out the toilet and you notice that the {kat_gender==male:man|woman} who had a bad dinner left a receipt from the restaurant on the sink. You confirm that the dish responsible for the horror was a taco and you are about to put the ticket down, when you notice that it contains the WiFi password!
         {  not ate_food : -> gas_station}
 -
 You turn on your phone, insert the password from the receipt and anxiously wait for the waiting animation to complete. You are connected.
-A few notifications from various messaging and email app pop-up.
+A few notifications from various messaging and email apps pop-up.
 -> phone_notifications
 = phone_notifications
 VAR can_contact_james = false
     * [Mom]
-        "{kat_name}, please come home. We miss you.". You wonder how someone in the army can come up with such a stupid and lame attempt of luring you back before deleting the message.
+        "{kat_name}, please come home. We miss you.". You wonder how someone in the army can come up with such a stupid and lame attempt of luring you back, before deleting the message.
     * [Dad]
         "run!", your father sent you the sms  this morning when he was distracting the soldiers. It feels like a week has pasted since then...
     * [HyGen]
@@ -325,14 +325,14 @@ You spend the next three hours sitting on the back of the restaurant building, {
 "What does that even... Let's go {kat_name}, the earlier we leave this area, the less risks we face."
 * [Step towards the lit area]
 You step towards James and under the neon light, rising your eyes to meet James'. 
-- "What the fuck!", James exclaims surprised. " Why are you wearing a cat mask and why are your eyes shiny?"
+- "What the fuck!", James exclaims surprised. "Why are you wearing a cat mask and why are your eyes shiny?"
     * [Laugh]
         "Eheh! It is not a mask!"
     * [Apologize]
         "Sorry for keeping it a secret after so many years"
     - <>, then you explain "James, I'm a hybrid between a human and a cat."
-"Holy shit!", he exclaims and you are are impressed at how well he took the news. "At least that explains why those HyGen freaks tried so hard to hunt you down. Hunt you in a human way! I'm not saying that you are an animal! Oh, I guess I'm not that good with first impressions...".
+"Holy shit!", he exclaims and you are impressed at how well he took the news. "At least that explains why those HyGen freaks tried so hard to hunt you down. Hunt you in a human way! I'm not saying that you are an animal! Oh, I guess I'm not that good with first impressions...".
 "As you may guess I'm not good at first impressions either!", you joke and you both laugh.
-"Let's go in the car.", he invites you., You leave the gas station and you already feel warmer and safer.
+"Let's go in the car.", he invites you. You leave the gas station and you already feel warmer and safer.
 
 -> james
