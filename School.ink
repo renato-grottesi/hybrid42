@@ -123,14 +123,14 @@ The bell rings and all the students start walking back to the classrooms. You hi
         The basketball field looks quite new and everything is in a good state.
         -> school_puzzle
     ** [Check the ring]
-        The wrestling ring is a but worn out, but still functional.
+        The wrestling ring is a bit worn out, but still functional.
         -> school_puzzle
     ** [Check the ropes]
-        All the ropes hanging from the roof look solid enough to be climbed even by a minotaur, however you can't stop thinking on what would happen if a minotaur falls from the top...
+        All the ropes hanging from the roof look solid enough to be climbed even by a minotaur, however you can't stop thinking about what would happen if a minotaur falls from the top...
         -> school_puzzle
     ** {inventory?rope} [Sabotage]
         You suddenly realize that the best way to get a GPS implant is by stealing the equipment from the hospital and the only way to see how equipment looks and work is to send someone to the hospital.
-        You climb up the bug rope, you wrap the smaller rope from your backpack around the big one and you pull from each end of the smaller rope alternatively. The small rope manages to cut through the big one enough before breaking. You carry climb down the big rope and hide behind some chairs for the gym class to start.
+        You climb up the big rope, you wrap the smaller rope from your backpack around the big one and you pull from each end of the smaller rope alternatively. The small rope manages to cut through the big one enough before breaking. You carry climb down the big rope and hide behind some chairs for the gym class to start.
         ->climbing_fall
     --
 * [Check classrooms]
@@ -138,7 +138,7 @@ The bell rings and all the students start walking back to the classrooms. You hi
 + {not (inventory?rope)} [Check park]
     You look around the park for something useful to remove the GPS trackers.
     **[Chewed chewing gum]
-        As in every park, even here in the middle of nowhere, someone had to spit a gum to the floor...
+        As in every park, even here in the middle of nowhere, someone had to spit a gum to the ground...
     **[Food remaining]
         Maybe you can feel some spoiled food to your enemies, but then it's better to let it rotten a bit more.
     **[Short broken rope]
@@ -149,7 +149,7 @@ The bell rings and all the students start walking back to the classrooms. You hi
     -> hygen.fork
 - -> school_puzzle
 = climbing_fall
-When you hear the bell ringing, you quickly run outside and check the gym from the window. The human teacher divides the students into groups and assigns them to different activities, but you are only interested in the rope climbing group. A sphinx climbs the sabotaged  rope up and down safely. Then another sphinx  does the same. Finally the teacher asks a minotaur to climb: as expected, when he reaches half way up, the rope breaks and get falls down, breaking a leg.
+When you hear the bell ringing, you quickly run outside and check the gym from the window. The human teacher divides the students into groups and he assigns them to different activities, but you are only interested in the rope climbing group. A sphinx climbs the sabotaged rope up and down safely. Then another sphinx  does the same. Finally the teacher asks a minotaur to climb: as expected, when he reaches half way up, the rope breaks and he falls down, breaking a leg.
 You run to the near hospital, ready to study what is going to happen to the poor minotaur.
 -> hospital
 -> gps_removal
