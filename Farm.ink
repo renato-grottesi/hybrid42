@@ -4,7 +4,7 @@ You wake in your bed, your tail below your head as a pillow.
 You jump out the bed and stretch you legs.
 "{kat_name}, come down! Breakfast is ready!" calls your mother from the kitchen.
     * "I'm coming!"
-        You scream back and you 
+        You scream back. You <>
     * "I'll be there in 5 minutes!"
         You stop by the toilet to freshen up, then you <>
 - run down the stairs skipping every other step and you bounce with your feet on the wall where <>
@@ -15,7 +15,7 @@ the staircase turns to the opposite direction.
     * [I'm reckless]
         "Don't worry! My feline instinct never fails me!" you answer.
 - "Well... I guess I'll never get used to your abilities." she says and she smiles back at you.
-"I made some liver sandwiches for you: eat one sandwich before doing your homework."
+"I made some liver sandwiches for you: eat one before doing your homework."
     * [Thanks!]
         "Thanks mom! That's my favorite!"
 - While you enjoy the sandwich, your mother asks you: "Did you have a pleasant dream tonight?"
@@ -28,7 +28,7 @@ the staircase turns to the opposite direction.
     * [Tell the truth]
         "I've been dreaming again about other human/animal hybrids, maybe just some repressed memory about my past..."
 - "{kat_name}... Have you been checking online again for your origins?" she asks.
-"I did, but isn't it normal to find out the truth?"
+"I did, but isn't it normal to wish to find out the truth?"
 "It is normal {kat_name}, but please, promise me that you won't visit some risky website <>
 or talk with strangers online"
     * [Promise]
@@ -119,7 +119,7 @@ You hear the engine of an unknown car approaching your house and you quickly tur
         You carefully peek behind the curtain and you notice that there is black SUV car followed by a <>
     - big van that reminds you of the one from the A-Team.
 You get extremely suspicious about the visitors and you close the door of your bedroom.
-The cars stop by the entrance and you can see two man in suites coming out of the SUV and four soldiers in camouflage jumping out from the black van.
+The cars stop by the entrance and you can see two men dressed in suite coming out of the SUV and four soldiers in camouflage jumping out from the black van.
 VAR window_open = false
     * [Take a photo]
         You carefully put your phone behind the curtain and get a few photos of the men and their vehicles.
@@ -140,14 +140,14 @@ The phone vibrates.
     * [Check your mother]
         You open the door and see your mother held by a men in suite while two soldiers are checking the living room.
         Everyone's attention focus on you and your mother screams "Run!"
-- You don't think about it twice, you grab your backpack, run towards the window{window_open: open it wide|, struggle to open it while you hear the soldiers running upstairs, eventually manage to spread it wide} and jump to the branch of the oak tree.
+- You don't think about it twice, you grab your backpack, run towards the window{window_open: open it wide|, you struggle to open it while you hear the soldiers running upstairs. Eventually you manage to spread it wide} and you jump to the branch of the oak tree.
 "Hey you assholes! What are you doing in my property?" your father screams at the soldiers to distract them.
 He clearly looks your way with a confident look that says "go {kat_gender==male:son|daughter}, I'll handle these intruders".
     * [run towards the fields]
         The corn field is the perfect hiding place. You jump from one oak tree to another and eventually you run towards the tall plants.
         You don't know what is going to happen to your parents, but you trust their though skin.
     * [run toward the orchard]
-        The fruit trees in the orchards are full of leaves. You jump down the oak tree and run towards the trees. A soldier spot you and you see your father punching him in the arm to disarm him. You run as fast as you can, but they start shooting at you.
+        The fruit trees in the orchards are full of leaves. You jump down the oak tree and run towards the apple trees. A soldier spots you and you see your father punching him in the arm to disarm him. You run as fast as you can, but they start shooting at you.
         ** [keep running straight]
             You keep running through the orchard, while the soldiers shoot at you. A projectile hits your backpack, but doesn't kill you. Eventually you reach the forest on the hills and you are sure that you lost your pursuers.
             ~inventory+=syringe
@@ -172,7 +172,7 @@ You consider your options:
                 Something doesn't feel safe. You can't point out what it is, but you trust your instincts and start to carefully walk backwards in the hope that the soldiers took a different paths. But they didn't. They see you and start running after you. Suddenly you hear them shouting and look back to see them surrounded by a pack of wolves. They <>
                 ~ soldiers_forest = true
             *** [Continue]
-                You ignore your fears and keep walking in the forest. You hear a crackling sound, someone is walking towards you, but it is not the sound of soldier's boots. Then you see them: a pack of 6 wolves is slowly surrounding you. 
+                You ignore your fears and keep walking in the forest. You hear a crackling sound, someone is walking towards you, but it is not the sound of soldier's boots. Then you see them: a pack of six wolves is slowly surrounding you. 
                 **** [Climb a tree]
                     You run towards the nearest tree and climb to a safe branch. The wolves walk frantically below you. You throw some pine-cones at them, but you're only making them more nervous. Then you hear the sound of soldiers approaching. The wolves do as well. You throw a pine-cone in the soldiers' direction to attract their attention and conceal yourself in the branches higher up the tree. From your hiding place you see the soldiers and wolves preparing to engage in a battle. A wolf haul and the soldiers <>
                 **** [Charge at the wolves]
@@ -248,7 +248,7 @@ VAR can_contact_james = false
     * [Mom]
         "{kat_name}, please come home. We miss you.". You wonder how someone in the army can come up with such a stupid and lame attempt of luring you back before deleting the message.
     * [Dad]
-        "run!", your father sent you this morning when he was distracting the soldiers. It feels like a week has pasted since then...
+        "run!", your father sent you the sms  this morning when he was distracting the soldiers. It feels like a week has pasted since then...
     * [HyGen]
         Dear {kat_gender==male:Mr|Miss} {kat_name},
         we are still interested in sharing with you our advances in human animal hybrids.
@@ -265,7 +265,7 @@ VAR can_contact_james = false
          "it is versus my code of conduct, but if you don't check in within a hour, I'll hack your PC and check your camera."
          "Holy Shit. They are there."
          "I didn't see you from any camera or hear you from any microphone"
-         "if you managed to run away from them and you need anything, reach me in through this encrypted application and I'll do whatever I can."
+         "if you managed to run away from them and you need anything, reach me through this encrypted application and I'll do whatever I can."
          "Don't open any other applications, don't answer nobody else and obviously don't turn on the data connection of your phone, or they'll track you!"
 
          A smile appears on your face. At least you can count on James to help you.
@@ -313,7 +313,7 @@ You spend the next three hours sitting on the back of the restaurant building, {
         "{kat_name}, it is James. I came to pick you up. Come out if you are there."
         -> wait_hidden
     *[Walk towards the voice]
-- You walk towards James. Your feline eyesight recognize him very well from his profile picture.
+- You walk towards James. Your feline eyesight recognizes him very well from his profile picture.
 "James, I'm here!", you answer.
 "Oh, thanks God you are safe! Let's go in the car and we'll talk on the way to my place!", he says a bit worried.
    * ["Before you get scared..."]
@@ -326,7 +326,7 @@ You spend the next three hours sitting on the back of the restaurant building, {
 "What does that even... Let's go {kat_name}, the earlier we leave this area, the less risks we face."
 [Step towards the lit area]
 You step towards James and under the neon light, rising your eyes to meet James'. 
-"What the fuck!", James exclaims surprised. " Why are you wearing a cat mask and why are your eyes shiny?"
+- "What the fuck!", James exclaims surprised. " Why are you wearing a cat mask and why are your eyes shiny?"
     * [Laugh]
         "Eheh! It is not a mask!"
     * [Apologize]
