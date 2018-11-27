@@ -210,6 +210,7 @@ You don't like apples, but eating one a day keeps the doctor away, so why not ha
     -  You go out from the back door that you used before and start running away from the house as fast as you can.
     -> escape
 = escape
+ # MUSIC: station.mp3
 Soon enough you manage run far enough to be safe, but you feel very miserable for putting James in trouble and abandon him. 
 You wonder where you are.
     * [Try Celestial Navigation]
