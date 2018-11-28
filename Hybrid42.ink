@@ -17,6 +17,8 @@ INCLUDE School.ink
 
 === intro ===
 
+#IMAGE: icon.png
+
 - (begin)
     + [Begin] # CLEAR
     * [Credits]

@@ -95,7 +95,7 @@ VAR saw_scan = false
         - pictures:
             + summer.jpeg
                 You see an happy selfie at the beach. You try to identify the location and ask James for help.
-                "I have no clue about the location and I doubt that I can track it with some image recognition software...", he confess. "If only it had a geo tag, it would have been so much more easier.", he continues.
+                "I have no clue about the location and I doubt that I can track it with some image recognition software...", he confesses. "If only it had a geo tag, it would have been so much more easier.", he continues.
             -> hack_puzzle
             + scan.png
                 The image shows the scanning of a boring financial document dated two days ago, but you notice something familiar.
@@ -114,7 +114,7 @@ VAR was_printer_not_paper = true
     * [The paper]
         ~ was_printer_not_paper = false
         "That means that they have been using the same paper supplier since I was born.", you explain.
-        "That's indeed a very strange type of paper... It resembles those listings papers used in very old dot matrix printers. I'll put it through an image recognition scanning program that will give us a heatmap of the most likely locations where that paper is still in use.", James says.
+        "That's indeed a very strange type of paper... It resembles those listing paper used in very old dot matrix printers. I'll put it through an image recognition scanning program that will give us a heatmap of the most likely locations where that paper is still in use.", James says.
 - While waiting for the results, you check your new phone and play some games, trying to remember what a normal life felt like, but then you miss your parents.
 * [About my parents]
 - "James... Can you check on my parents, please?", you ask your best friend.
@@ -173,17 +173,18 @@ You arrive at his mother's at twelve past nine in the evening.
     "OK, I'll wait here, but don't take too long."
     "I won't.", he promises.
     You put the hoodie over your head and take a nap.
-    As soon as you start dreaming about being a ninja in Naruto's would, you wake up from the vibrating phone. You pull it out of your pocket and see a call from an unknown number. 
+    As soon as you start dreaming about being a ninja in Naruto's world, you wake up from the vibrating phone. You pull it out of your pocket and you see a call from an unknown number. 
     * [Pick up]
-        You pick up the call and you see a video from a strange perspective of James in the floor being held face down by a man in a suite. You realize that James must have connected a fast heart pulse to trigger an emergency call from his smartwatch. You can hear audio as well and the man in black suite commands: "We got the target alone. Send some men to search for the Hybrid 42 outside."
+        You pick up the call and you see a video from a strange perspective of James in the floor being held face down by a man in a suite. You realize that James must have connected a fast heart pulse to trigger an emergency call from his smartwatch. You can hear audio as well and the man in the black suite orders to his colleague: "We got the target alone. Send some men outside to search for the Hybrid 42."
     Your blood freezes. They got James and you are alone in a car that you can't drive.
     * [Ignore]
         You swipe left the call, assuming it's nothing important.
-        You look at the house and see more than one silhouette moving fast.
+        You look at the house and you see more than one silhouette moving fast.
         Shortly after you see two people with flashlight patrolling the area around the house.
-    - You turn off the light inside the car and swiftly go out and run in the opposite direction if the flashlights.
+    - You turn off the light inside the car and swiftly go out and run in the opposite direction of the flashlights.
     -> escape
 = go_inside
+
     "Can I join you: I don't feel comfortable waiting alone in a stolen car with my face..."
     "Sure, but nobody ever comes in this area. This street just connects two small towns and there is nothing interesting around here."
     You both walk towards the house and enter from the back door that goes straight into the kitchen.
@@ -200,7 +201,7 @@ You arrive at his mother's at twelve past nine in the evening.
         A nice pair of scissors lying on the shelf reminds you of those nice point and click adventures, so you pick it up and store it in the backpack.
         ~ inventory+=scissors
     * [Apple]
-You don't like apples, but eating one a day keeps the doctor away, so why not having one in the backpack.
+        You don't like apples, but eating one a day keeps the doctor away, so why not having one in the backpack.
         ~ inventory+=apple
     - Suddenly you hear a big thump of something big falling upstairs and you focus your hearing. You distinguish a command: "I'll keep this kid silent, you two go outside and get Hybrid 42!"
     They are running downstairs.
@@ -211,7 +212,7 @@ You don't like apples, but eating one a day keeps the doctor away, so why not ha
     -> escape
 = escape
  # MUSIC: station.mp3
-Soon enough you manage run far enough to be safe, but you feel very miserable for putting James in trouble and abandon him. 
+Soon enough you manage to run far enough to be safe, but you feel very miserable for putting James in trouble and abandon him. 
 You wonder where you are.
     * [Try Celestial Navigation]
         You look at the sky and you manage to locate the north star. The starry sky is very relaxing. You calm down and you remember that you have a phone with GPS.
