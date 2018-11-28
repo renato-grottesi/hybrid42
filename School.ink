@@ -125,7 +125,7 @@ The bell rings and all the students start walking back to the classrooms. You hi
     ** [Check the ring]
         The wrestling ring is a bit worn out, but still functional.
         -> school_puzzle
-    ** [Check the ropes]
+    ++ [Check the ropes]
         All the ropes hanging from the roof look solid enough to be climbed even by a minotaur, however you can't stop thinking about what would happen if a minotaur falls from the top...
         -> school_puzzle
     ** {inventory?rope} [Sabotage]
