@@ -171,7 +171,7 @@ You are back to the school area and you can see the students hanging around in t
     "I'm Tylker, you dumb. Luna is over there."
     "Oh, I'm terribly sorry...", you apologize and start walking towards your friend.
     "Luna?"
-    "Oh, hey {kat_name}. How is your quest for finding a GPS tracker remover?", he asks.
+    "Oh, hey {kat_name}. How is your quest for finding a GPS tracker remover?", she asks.
     {
         - from_sphinx:
             "Not too well... I was in the hospital and I found where they store the removers, but a human got in my way and I had to run.", you explain.
