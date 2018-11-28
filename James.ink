@@ -228,7 +228,7 @@ VAR found_bookmarks = false
         Home is quite far and you guess that HyGen is probably surveilling your parents closely.
         ->find_options
     * {found_bookmarks} [Look for transport]
-        You check the best way to reach HyGen's headquarters and you find that there is a train station on the next town that is connected to a town not too far from the base.
+        You check the best way to reach HyGen's headquarters and you find that there is a train station on the next town. The railway seems to reach directly a train station not too far from the base.
         ->find_options
     * [Check bookmarks]
         ~ found_bookmarks = true
@@ -253,19 +253,19 @@ VAR has_coin=false
             You have no pocket money with you.
         }
         ->entrance_loop
-- You sit on a bench in the hall, thinking of the crazy day you had. You are worried on what is going to be of your parents and James. You wonder how will you manage to board a train full of people in the morning. You curl yourself, thinking of a good place where to sleep without being discovered. Suddenly, you hear the sound of a train approaching the station. You run outside and hide behind a tree, waiting to see what kind of train it is.
+- You sit on a bench in the hall, thinking of the crazy day you had. You are worried about what is going to be of your parents and James. You wonder how will you manage to board a train full of people in the morning. You curl yourself, thinking of a good place where to sleep without being discovered. Suddenly, you hear the sound of a train approaching the station. You run outside and hide behind a tree, waiting to see what kind of train it is.
 The train pass trough the station very slowly and you notice it is an animal transportation train.
     * [Board the animal train]
         -> animal_train
     * [Wait for the scheduled morning train] 
         -> people_train
 = animal_train
-You remember that there is only one train track between this station and your destination: this train must pass through your target. You start running to gain momentum and you jump with all your strength in the gap between two wagons. You secure yourself with your claws in the wooden wagon. It is quite cold, so you enter the wagon in front.
+You remember that there is only one train track between this station and your destination: this train must pass through your target. You start running to gain speed and you jump with all your strength in the gap between two wagons. You secure yourself with your claws in the wooden wagon. It is quite cold, so you enter the wagon in front.
 VAR ate_eggs = false
 VAR drunk_milk = false
 -> pigs_wagon
 = pigs_wagon
-{You should have understood it from the smell: the wagon is full of filthy pigs.|You go back to the pig's wagon once more and you want to leave it as soon as possible.|You wonder why keep visiting the pig's wagon...Are you a masochist?|You come to terms with the fact that you like to smells pig's shit.|You are back to the pig's wagon and you love the smell.}
+{You should have understood it from the smell: the wagon is full of filthy pigs.|You go back to the pig's wagon once more and you want to leave it as soon as possible.|You wonder why you keep visiting the pig's wagon...Are you a masochist?|You come to terms with the fact that you like to smells pig's shit.|You are back to the pig's wagon and you love the smell.}
 + [Wagon in front]
 -> chickens_wagon
 + [Wagon behind]
@@ -285,7 +285,7 @@ This wagon contains just a few cages with rabbits. {not ate_eggs: You are so hun
 + [Wagon behind]
 -> cows_wagon
 * {ate_eggs && drunk_milk} [Sleep]
-You set an event in the phone you got from James to wake you up when you are in proximity of your destination, then you curl yourself in the hay and have a nice and restoring sleep. When you wake up, you have time to eat a few more eggs, drink some more milk and then <>
+You set an event in the phone you got from James to wake you up when you are in proximity of your destination, then you curl yourself in the hay and you have a nice restoring sleep. When you wake up, you have time to eat a few more eggs, drink some more milk and then <>
 -> end_station
 = cows_wagon
 A wagon full of cows ready to be milked: it's like a cat's paradise! {not drunk_milk: You choose the nicest cow and latch to her until your belly is full of fresh milk.}
@@ -312,8 +312,8 @@ You dream of sleeping in a tree outside, with rabbits jumping on the ground.
 "Ticket please.", a voice wake you up. You hand over your ticket to the trainman that checks it and give it back to you 
 "Are you okay?", he asks.
 * [Play cool]
-    Your disguise is so hip hop, that you not you head and answer: "Yo man, I'm cool."
-    "Okay...", he says with a n uncertain voice.
+    Your disguise is so hip hop, that you nod your head and answer: "Yo man, I'm cool."
+    "Okay...", he says with an uncertain voice.
 * [Play sick]
     You cough and with a rough deep voice you answer: "I've got a cold. The doctor told me to cover and wear a mask to not infect people."
     "You shouldn't travel when you are so sick. Let me know if you need anything.", he offers.
