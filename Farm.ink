@@ -65,7 +65,7 @@ VAR knows_james = 0
             is everything fine?
             ~ unread = unread-1
             ~ email_james = true
-            {knows_james <2 "Dammit! I forgot to join the game yesterday! I should better try to get in touch with James in the game chat later." you remember.}
+            {knows_james < 2 : "Dammit! I forgot to join the game yesterday! I should better try to get in touch with James in the game chat later." you remember.}
         ** [Read email from HyGen]
             Dear {kat_gender==male:Mr|Miss} {kat_name},
             we have some information regarding your inquiry on the progress of our research on human/animal hybrids, <>
