@@ -1,7 +1,7 @@
 === farm_begin ===
 Monday 24th of September 2018
 You wake in your bed, your tail below your head as a pillow.
-You jump out the bed and stretch you legs.
+You jump out the bed and stretch your legs.
 "{kat_name}, come down! Breakfast is ready!" calls your mother from the kitchen.
     * "I'm coming!"
         You scream back. You <>

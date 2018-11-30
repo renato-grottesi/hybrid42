@@ -1,5 +1,5 @@
 === hygen ===
-Thursday 27th of September 2018
+Thursday 27th of September 2018 # MUSIC: fight.mp3
 
 After walking for an hour, you hit the perimeter wall of the HyGen headquarters.
 * [Climb a tree]
