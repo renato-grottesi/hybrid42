@@ -237,6 +237,7 @@ VAR has_passwd = false
         You hear someone approaching and you hide yourself in a toilet.
         A middle-aged {kat_gender==male:man|woman} enters the toilet and your sensitive smell is sending pulses of pain to your brain for five good minutes...
         When you are sure to be alone, you go out the toilet and you notice that the {kat_gender==male:man|woman} who had a bad dinner left a receipt from the restaurant on the sink. You confirm that the dish responsible for the horror was a taco and you are about to put the ticket down, when you notice that it contains the WiFi password!
+        ~ has_passwd = true
         {  not ate_food : -> gas_station}
 -
 You turn on your phone, insert the password from the receipt and anxiously wait for the waiting animation to complete. You are connected.
